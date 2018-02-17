@@ -116,10 +116,9 @@ public class Toolbar extends android.support.v7.widget.Toolbar {
     public final static int BUTTON_NONE = 0;
     public final static int BUTTON_BACK = 1;
     public final static int BUTTON_CLOSE = 2;
-    public final static int BUTTON_DONATE = 3;
     public final static int BUTTON_CANCEL = 4;
 
-    int buttonType = BUTTON_DONATE;
+    int buttonType = BUTTON_NONE;
 
     public void setButton(int type) {
         switch (type) {
@@ -133,12 +132,6 @@ public class Toolbar extends android.support.v7.widget.Toolbar {
                 Timber.d("BUTTON_CLOSE");
                 bDonate.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_close_white_24dp, 0, 0, 0);
                 bDonate.setText(R.string.label_close);
-                bDonate.setVisibility(View.VISIBLE);
-                break;
-            case BUTTON_DONATE:
-                Timber.d("BUTTON_DONATE");
-                bDonate.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_favorite_white_24dp, 0, 0, 0);
-                bDonate.setText(R.string.label_donate);
                 bDonate.setVisibility(View.VISIBLE);
                 break;
             case BUTTON_CANCEL:

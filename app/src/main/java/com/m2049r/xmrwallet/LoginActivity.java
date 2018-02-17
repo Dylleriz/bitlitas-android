@@ -46,7 +46,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.m2049r.xmrwallet.dialog.AboutFragment;
-import com.m2049r.xmrwallet.dialog.DonationFragment;
 import com.m2049r.xmrwallet.dialog.HelpFragment;
 import com.m2049r.xmrwallet.dialog.PrivacyFragment;
 import com.m2049r.xmrwallet.model.Wallet;
@@ -119,9 +118,6 @@ public class LoginActivity extends SecureActivity
                         break;
                     case Toolbar.BUTTON_CLOSE:
                         finish();
-                        break;
-                    case Toolbar.BUTTON_DONATE:
-                        DonationFragment.display(getSupportFragmentManager());
                         break;
                     case Toolbar.BUTTON_NONE:
                     default:

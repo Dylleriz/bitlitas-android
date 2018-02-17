@@ -6,9 +6,7 @@
         android:id="@+id/bDonate"
         style="@style/ToolBarStyle.ActionButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_favorite_white_24dp"
-        android:text="@string/label_donate" />
+        android:layout_height="wrap_content"/>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"

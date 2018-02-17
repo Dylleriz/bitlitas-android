@@ -147,32 +147,32 @@ public class WalletFragment extends Fragment
 
     void updateBalance() {
         if (isExchanging) return; // wait for exchange to finish - it will fire this itself then.
-        // at this point selection is XMR in case of error
+        // at this point selection is LTL in case of error
         String displayB;
         double amountA = Double.parseDouble(Wallet.getDisplayAmount(unlockedBalance)); // crash if this fails!
-        if (!"XMR".equals(balanceCurrency)) { // not XMR
+        if (!"LTL".equals(balanceCurrency)) { // not LTL
             double amountB = amountA * balanceRate;
             displayB = Helper.getFormattedAmount(amountB, false);
-        } else { // XMR
+        } else { // LTL
             displayB = Helper.getFormattedAmount(amountA, true);
         }
         tvBalance.setText(displayB);
     }
 
-    String balanceCurrency = "XMR";
+    String balanceCurrency = "LTL";
     double balanceRate = 1.0;
 
     private final ExchangeApi exchangeApi = new ExchangeApiImpl(OkHttpClientSingleton.getOkHttpClient());
 
     void refreshBalance() {
-        if (sCurrency.getSelectedItemPosition() == 0) { // XMR
+        if (sCurrency.getSelectedItemPosition() == 0) { // LTL
             double amountXmr = Double.parseDouble(Wallet.getDisplayAmount(unlockedBalance)); // assume this cannot fail!
             tvBalance.setText(Helper.getFormattedAmount(amountXmr, true));
-        } else { // not XMR
+        } else { // not LTL
             String currency = (String) sCurrency.getSelectedItem();
             if (!currency.equals(balanceCurrency) || (balanceRate <= 0)) {
                 showExchanging();
-                exchangeApi.queryExchangeRate("XMR", currency,
+                exchangeApi.queryExchangeRate("LTL", currency,
                         new ExchangeCallback() {
                             @Override
                             public void onSuccess(final ExchangeRate exchangeRate) {
@@ -220,7 +220,7 @@ public class WalletFragment extends Fragment
     }
 
     public void exchangeFailed() {
-        sCurrency.setSelection(0, true); // default to XMR
+        sCurrency.setSelection(0, true); // default to LTL
         double amountXmr = Double.parseDouble(Wallet.getDisplayAmount(unlockedBalance)); // assume this cannot fail!
         tvBalance.setText(Helper.getFormattedAmount(amountXmr, true));
         hideExchanging();
@@ -228,10 +228,10 @@ public class WalletFragment extends Fragment
 
     public void exchange(final ExchangeRate exchangeRate) {
         hideExchanging();
-        if (!"XMR".equals(exchangeRate.getBaseCurrency())) {
-            Timber.e("Not XMR");
+        if (!"LTL".equals(exchangeRate.getBaseCurrency())) {
+            Timber.e("Not LTL");
             sCurrency.setSelection(0, true);
-            balanceCurrency = "XMR";
+            balanceCurrency = "LTL";
             balanceRate = 1.0;
         } else {
             int spinnerPosition = ((ArrayAdapter) sCurrency.getAdapter()).getPosition(exchangeRate.getQuoteCurrency());
