@@ -69,13 +69,13 @@ public class WalletManager {
     }
 
     public Wallet createWallet(File aFile, String password, String language) {
-        long walletHandle = createWalletJ(aFile.getAbsolutePath(), password, language, isTestNet());
+        long walletHandle = createWalletJ(aFile.getAbsolutePath(), password, language, isTestNet(), 0);
         Wallet wallet = new Wallet(walletHandle);
         manageWallet(wallet);
         return wallet;
     }
 
-    private native long createWalletJ(String path, String password, String language, boolean isTestNet);
+    private native long createWalletJ(String path, String password, String language, boolean isTestNet, long restoreHeight);
 
     public Wallet openWallet(String path, String password) {
         long walletHandle = openWalletJ(path, password, isTestNet());

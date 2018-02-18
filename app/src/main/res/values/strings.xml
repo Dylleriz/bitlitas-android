@@ -7,7 +7,7 @@
     <string name="menu_about">Apie</string>
     <string name="menu_privacy">Privatumo politika</string>
 
-    <string name="menu_share">Share</string>
+    <string name="menu_share">Dalintis</string>
     <string name="menu_help">Pagalba</string>
     <string name="menu_info">Detalės</string>
     <string name="menu_receive">Gauti</string>
@@ -24,8 +24,8 @@
     <string name="label_send_success">Sėkmingai išsiųsta</string>
     <string name="label_send_done">Baigta</string>
 
-    <string name="label_receive_info_gen_qr_code">Touch for QR Code</string>
-    <string name="info_send_prio_fees">Higher Priority = Higher Fees</string>
+    <string name="label_receive_info_gen_qr_code">Paliesk dėl QR kodo</string>
+    <string name="info_send_prio_fees">Aukštesnis prioritetas = didesni mokesčiai</string>
 
     <string name="info_xmrto"><![CDATA[
         <b>You entered a Bitcoin address.</b><br/>
@@ -34,14 +34,14 @@
 
     <string name="info_send_xmrto_success_order_label">XMR.TO Order</string>
 
-    <string name="info_send_xmrto_success_sending">Sending</string>
-    <string name="info_send_xmrto_success_status_label">Status:</string>
+    <string name="info_send_xmrto_success_sending">Siunčiama</string>
+    <string name="info_send_xmrto_success_status_label">Statusas:</string>
     <string name="info_send_xmrto_success_btc">%1$s BTC</string>
-    <string name="info_send_xmrto_success_status">%1$s is %1$s (#%1$d)</string>
+    <string name="info_send_xmrto_success_status">%1$s yra %1$s (#%1$d)</string>
 
-    <string name="info_txdetails_xmrto_key">Key:</string>
+    <string name="info_txdetails_xmrto_key">Raktas:</string>
     <string name="info_txdetails_xmrto_address">Address:</string>
-    <string name="info_txdetails_xmrto_status">Status:</string>
+    <string name="info_txdetails_xmrto_status">Statusas:</string>
     <string name="info_txdetails_xmrto_amount">%1$s BTC</string>
 
 
@@ -62,7 +62,7 @@
     <string name="send_available_btc">Balansas: %2$s BTC (%1$s LIT)</string>
 
     <string name="info_paymentid_intergrated">Pervedimo ID integrated</string>
-    <string name="info_prepare_tx">Preparing your transaction</string>
+    <string name="info_prepare_tx">Ruošiamas Jūsų pervedimas</string>
 
     <string name="label_send_progress_xmrto_create">Creating XMR.TO Order</string>
     <string name="label_send_progress_xmrto_query">Querying XMR.TO Order</string>
@@ -71,7 +71,7 @@
     <string name="label_send_progress_queryparms">Querying xmr.to parameters</string>
 
     <string name="label_generic_xmrto_error">XMR.TO ERROR</string>
-    <string name="text_generic_xmrto_error">Code: %1$d</string>
+    <string name="text_generic_xmrto_error">Kodas: %1$d</string>
 
     <string name="text_retry">Touch to retry</string>
     <string name="text_noretry_monero">Now we\'re stuck here!</string>
@@ -93,35 +93,35 @@
 
     <string name="label_send_btc_retry">Touch to retry</string>
 
-    <string name="label_send_txid">Transaction ID</string>
+    <string name="label_send_txid">Transakcijos ID</string>
     <string name="label_send_address">Destination Address</string>
     <string name="label_send_payment_id">Pervedimo ID</string>
     <string name="label_send_notes">Notes</string>
 
-    <string name="backup_progress">Backup in progress</string>
-    <string name="archive_progress">Archive in progress</string>
-    <string name="rename_progress">Rename in progress</string>
+    <string name="backup_progress">Daroma atsarginė kopija</string>
+    <string name="archive_progress">Archyvuojama</string>
+    <string name="rename_progress">Bandoma pervadinti</string>
     <string name="open_progress">Checking daemon connection</string>
 
     <string name="service_progress">Wrapping things up &#8230;\nThis can take a while!</string>
 
-    <string name="backup_success">Backup successful</string>
-    <string name="backup_failed">Backup failed!</string>
+    <string name="backup_success">Atsarginė kopija padaryta</string>
+    <string name="backup_failed">Atsarginės kopijos padaryti nepavyko!</string>
     <string name="archive_success">Archive successful</string>
     <string name="archive_failed">Archive failed!</string>
-    <string name="delete_failed">Delete failed!</string>
-    <string name="rename_failed">Rename failed!</string>
+    <string name="delete_failed">Nepavyko ištrinti!</string>
+    <string name="rename_failed">Nepavyko pervadinti!</string>
 
     <string name="label_daemon">Jungtis</string>
     <string name="prompt_daemon">([&lt;user&gt;:&lt;pass&gt;@]&lt;daemon&gt;[:&lt;port&gt;])</string>
     <string name="prompt_mainnet">Net Selection</string>
-    <string name="connect_testnet">TestNet</string>
-    <string name="connect_mainnet">MainNet</string>
-    <string name="status_walletlist_loading">Loading Wallet List</string>
+    <string name="connect_testnet">Testinis</string>
+    <string name="connect_mainnet">Tinklas</string>
+    <string name="status_walletlist_loading">Kraunamas jungčių sąrašas</string>
     <string name="status_wallet_loading">Užkraunama piniginė &#8230;</string>
-    <string name="status_wallet_unloading">Saving Wallet</string>
-    <string name="status_wallet_unloaded">Wallet saved</string>
-    <string name="status_wallet_unload_failed">Wallet save failed!</string>
+    <string name="status_wallet_unloading">Išsaugoma piniginė</string>
+    <string name="status_wallet_unloaded">Piniginė išsaugota</string>
+    <string name="status_wallet_unload_failed">Piniginės išsaugoti nepavyko!</string>
     <string name="status_wallet_connecting">Jungiamasi &#8230;</string>
     <string name="status_wallet_connect_failed">Node connection failed!\nCheck username/password</string>
     <string name="status_wallet_connect_timeout">Node connection timed out!\nTry again or another.</string>
@@ -129,7 +129,7 @@
     <string name="status_wallet_connect_ioex">Cannot reach node!\nTry again or another.</string>
 
     <string name="status_working">Working on it &#8230;</string>
-    <string name="status_wallet_disconnected">Disconnected</string>
+    <string name="status_wallet_disconnected">Atsijungta</string>
 
     <string name="status_transaction_sent">Transaction sent!</string>
     <string name="status_transaction_failed">Transaction failed: %1$s</string>
@@ -139,17 +139,17 @@
 
     <string name="service_busy">I am still busy with your last wallet &#8230;</string>
 
-    <string name="prompt_rename">Rename %1$s</string>
+    <string name="prompt_rename">Pervadinti %1$s</string>
 
-    <string name="prompt_password">Password for %1$s</string>
-    <string name="prompt_send_password">Confirm Password</string>
-    <string name="bad_password">Incorrect password!</string>
-    <string name="bad_wallet">Wallet does not exist!</string>
-    <string name="error_not_wallet">This is not a wallet!</string>
-    <string name="prompt_daemon_missing">Daemon address must be set!</string>
-    <string name="prompt_wrong_net">Wallet does not match selected net</string>
-    <string name="warn_daemon_unavailable">Cannot connect to daemon! Try again.</string>
-    <string name="panic">Something\'s wrong!</string>
+    <string name="prompt_password">Slaptažodis piniginei: %1$s</string>
+    <string name="prompt_send_password">Patvirtinti slaptažodį</string>
+    <string name="bad_password">Blogas slaptažodis!</string>
+    <string name="bad_wallet">Piniginės nėra!</string>
+    <string name="error_not_wallet">Tai nėra piniginė!</string>
+    <string name="prompt_daemon_missing">Nėra jungties adreso!</string>
+    <string name="prompt_wrong_net">Piniginė nesutampa su pasirinktu tinklu</string>
+    <string name="warn_daemon_unavailable">Nepavyko prisijungti prie jungties! Bandykite dar kartą.</string>
+    <string name="panic">Kažkas blogai!</string>
 
     <string name="label_watchonly">(Tik stebėti)</string>
 
@@ -163,28 +163,28 @@
     <string name="label_transactions">Pervedimai</string>
     <string name="text_daemonConnected">Jungtis prijungta!</string>
 
-    <string name="service_description">bitlitas Service</string>
-    <string name="local_service_started">bitlitas Service Running</string>
-    <string name="local_service_stopped">bitlitas Service Stopped</string>
-    <string name="local_service_label">bitlitas Service</string>
-    <string name="local_service_connected">bitlitas Service Connected</string>
-    <string name="local_service_disconnected">bitlitas Service Disconnected</string>
+    <string name="service_description">Bitlitas servisas</string>
+    <string name="local_service_started">Bitlitas servisas veikia</string>
+    <string name="local_service_stopped">Bitlitas servisas sustabdytas</string>
+    <string name="local_service_label">Bitlitas servisas</string>
+    <string name="local_service_connected">Bitlitas servisas prijungtas</string>
+    <string name="local_service_disconnected">Bitlitas servisas atjungtas</string>
 
     <string name="status_synced">Sinkronizuota:</string>
     <string name="status_remaining">blokų liko</string>
     <string name="status_syncing">Skenuojama:</string>
 
     <string name="prompt_problems">Problemos</string>
-    <string name="message_strorage_not_writable">External Storage is not writable! Panic!</string>
+    <string name="message_strorage_not_writable">Nepavyksta rašyti į atminti! Panika!</string>
     <string name="message_strorage_not_permitted">We really need those External Storage permissions!</string>
-    <string name="message_camera_not_permitted">No camera = No QR scanning!</string>
+    <string name="message_camera_not_permitted">Nėra kameros = nėra QR skenavimo!</string>
 
-    <string name="label_copy_viewkey">View Key</string>
+    <string name="label_copy_viewkey">Stebėjimo raktas</string>
     <string name="label_copy_address">Viešas adresas</string>
     <string name="label_copy_xmrtokey">XMR.TO Key</string>
-    <string name="message_copy_viewkey">View Key copied to clipboard!</string>
+    <string name="message_copy_viewkey">Stebėjimo raktas nukopijuotas!</string>
     <string name="message_copy_xmrtokey">XMR.TO Key copied to clipboard!</string>
-    <string name="message_copy_address">Wallet Address copied to clipboard!</string>
+    <string name="message_copy_address">Piniginės adresas nukopijuotas!</string>
     <string name="message_copy_txid">Transaction ID copied to clipboard!</string>
     <string name="message_noselect_seed">Selecting seed disabled for security reasons!</string>
     <string name="message_noselect_key">Selecting spend key disabled for security reasons!</string>
@@ -194,7 +194,7 @@
 
     <string name="generate_title">Sukurti piniginę</string>
     <string name="generate_name_hint">Piniginės pavadinimas</string>
-    <string name="generate_password_hint">Spaltažodis</string>
+    <string name="generate_password_hint">Slaptažodis</string>
     <string name="generate_buttonGenerate">Sukurti piniginę!</string>
     <string name="generate_seed">Paslaptis</string>
     <string name="generate_button_accept">Aš užsirašiau šiuos 25 žodžius!</string>
@@ -210,10 +210,10 @@
     <string name="generate_wallet_created">Piniginė sukurta</string>
     <string name="generate_wallet_create_failed">Piniginės sukurti nepavyko</string>
 
-    <string name="generate_wallet_type_key">Keys</string>
-    <string name="generate_wallet_type_new">New</string>
+    <string name="generate_wallet_type_key">Raktai</string>
+    <string name="generate_wallet_type_new">Naujas</string>
     <string name="generate_wallet_type_seed">Seed</string>
-    <string name="generate_wallet_type_view">View</string>
+    <string name="generate_wallet_type_view">Stebėti</string>
 
     <string name="generate_address_hint">Viešas adresas</string>
     <string name="generate_viewkey_hint">Stebėjimo raktas</string>
@@ -233,9 +233,9 @@
     <string name="generate_check_address">Įveskite teisingą adresą</string>
     <string name="generate_check_mnemonic">Įveskite 5 žodžių paslaptį</string>
 
-    <string name="send_amount_btc_xmr">%1$s (indicative)</string>
+    <string name="send_amount_btc_xmr">%1$s (neaktyvu)</string>
 
-    <string name="send_address_hint">Receiver\'s XMR or BTC Address</string>
+    <string name="send_address_hint">Gavėjo adresas</string>
     <string name="send_paymentid_hint">Pervedimo ID (pasirinktinai)</string>
     <string name="send_amount_hint">0.00</string>
     <string name="send_notes_hint">Private Notes (pasirinktinai)</string>
@@ -243,24 +243,24 @@
     <string name="send_mixin_hint">Mixin</string>
     <string name="send_sweep_hint">Sweep</string>
     <string name="send_generate_paymentid_hint">Generuoti</string>
-    <string name="send_qr_hint">Scan</string>
-    <string name="send_prepare_hint">Prepare</string>
+    <string name="send_qr_hint">Skenuoti</string>
+    <string name="send_prepare_hint">Paruošti</string>
     <string name="send_dispose_hint">Dispose (Undo)</string>
     <string name="send_send_label">Spend my sweet Moneroj</string>
     <string name="send_send_timed_label">Spend my sweet Moneroj (%1$s)</string>
-    <string name="send_really_send_hint">Last Step - Confirm!</string>
-    <string name="send_qr_invalid">Not a QR Code</string>
+    <string name="send_really_send_hint">Paskutinis žingsnis - Patvirtinimas!</string>
+    <string name="send_qr_invalid">Ne QR kodas</string>
     <string name="send_qr_address_invalid">Not a valid payment QR code</string>
     <string name="send_address_invalid">Not a valid address</string>
-    <string name="send_preparing_progress">Preparing transaction</string>
-    <string name="send_title">Send</string>
+    <string name="send_preparing_progress">Paruošiama transakcija</string>
+    <string name="send_title">Siųsti</string>
     <string name="send_available">Balansas: %1$s LTL</string>
     <string name="send_address_title">Address</string>
     <string name="send_amount_title">Suma</string>
-    <string name="send_settings_title">Settings</string>
-    <string name="send_confirm_title">Confirm</string>
+    <string name="send_settings_title">Nustatymai</string>
+    <string name="send_confirm_title">Patvirtinti</string>
     <string name="send_success_title">Baigta</string>
-    <string name="send_summary_heading">Summary</string>
+    <string name="send_summary_heading">Apibendrinimas</string>
     <string name="send_amount_too_large">Suma > Funds</string>
 
     <string name="send_amount_label">Suma</string>
@@ -271,11 +271,11 @@
     <string name="send_total_label">Visos</string>
 
     <string name="send_amount">%1$s LTL</string>
-    <string name="send_fee">+%1$s Fee</string>
+    <string name="send_fee">+%1$s mokestis</string>
 
-    <string name="send_create_tx_error_title">Create Transaction Error</string>
+    <string name="send_create_tx_error_title">Klaida kuriant transakciją</string>
 
-    <string name="tx_list_fee_pending">incl. %1$s fee</string>
+    <string name="tx_list_fee_pending">prid. %1$s mokestis</string>
     <string name="tx_list_fee">- Mokestis %1$s</string>
     <string name="tx_list_amount_failed">(%1$s)</string>
     <string name="tx_list_failed_text">nepavyko</string>
@@ -286,8 +286,8 @@
     <string name="tx_address">Adresas</string>
     <string name="tx_timestamp">Laikas</string>
     <string name="tx_id">TX ID</string>
-    <string name="tx_id_btc">TX ID\n(BTC)</string>
-    <string name="tx_key">TX Key</string>
+    <string name="tx_id_btc">TX ID\n</string>
+    <string name="tx_key">TX Raktas</string>
     <string name="tx_destination">Destination</string>
     <string name="tx_destination_btc">Destination\n(BTC)</string>
     <string name="tx_paymentId">Pervedimo ID</string>
@@ -296,44 +296,44 @@
     <string name="tx_amount_btc">Suma\n(BTC)</string>
     <string name="tx_fee">Mokestis</string>
     <string name="tx_transfers">Transfers</string>
-    <string name="tx_notes">Notes</string>
-    <string name="tx_button_copy">Copy to Clipboard</string>
-    <string name="tx_copy_message">Copied to Clipboard</string>
-    <string name="tx_copy_label">Transaction Details</string>
+    <string name="tx_notes">Užrašai</string>
+    <string name="tx_button_copy">Kopijuoti</string>
+    <string name="tx_copy_message">Nukopijuota</string>
+    <string name="tx_copy_label">Transakcijos detalės</string>
     <string name="tx_notes_hint">(pasirinktinai)</string>
     <string name="tx_button_notes">Išsaugoti</string>
-    <string name="tx_notes_set">Notes saved</string>
-    <string name="tx_notes_set_failed">Notes saved failed</string>
-    <string name="tx_title">Transaction Details</string>
+    <string name="tx_notes_set">Užrašas išsaugotas</string>
+    <string name="tx_notes_set_failed">Užrašo išsaugoti nepavyko</string>
+    <string name="tx_title">Transakcijos detalės</string>
 
-    <string name="tx_pending">PENDING</string>
-    <string name="tx_failed">FAILED</string>
+    <string name="tx_pending">TVIRTINAMA</string>
+    <string name="tx_failed">NEPAVYKO</string>
 
-    <string name="receive_generate_hint">Show me the QR Code</string>
+    <string name="receive_generate_hint">Rodyti QR kodą</string>
     <string name="receive_paymentid_button">Generuoti</string>
     <string name="receive_paymentid_hint">Pervedimo ID (pasirinktinai)</string>
     <string name="receive_amount_hint">Suma</string>
     <string name="receive_amount_xmr_hint">LTL</string>
-    <string name="receive_cannot_open">Could not open wallet!</string>
+    <string name="receive_cannot_open">Negaliu atidaryti piniginės!</string>
     <string name="receive_paymentid_invalid">16 or 64 Hex characters (0&#8211;9,a&#8211;f)</string>
     <string name="receive_integrated_paymentid_invalid">Must be empty with integrated address</string>
     <string name="receive_bitcoin_paymentid_invalid">Must be empty with bitcoin address</string>
     <string name="receive_amount_invalid">Must be > 0</string>
 
-    <string name="receive_amount_empty">Enter value</string>
+    <string name="receive_amount_empty">Įveskite reikšmę</string>
     <string name="receive_amount_too_big">Max. %1$s</string>
     <string name="receive_amount_negative">Min. 0</string>
-    <string name="receive_amount_nan">LTL not a number</string>
+    <string name="receive_amount_nan">LTL nėra skaičius</string>
 
     <string name="receive_title">Gauti</string>
 
-    <string name="details_alert_message">Sensitive data will now be shown.\nLook over your shoulder!</string>
-    <string name="details_alert_yes">I\'m safe</string>
-    <string name="details_alert_no">Take me back!</string>
+    <string name="details_alert_message">Bus parodyta reikšminga informacija.\nNiekas nestebi per petį?</string>
+    <string name="details_alert_yes">Aš saugus</string>
+    <string name="details_alert_no">Grįžti atgal!</string>
     <string name="details_title">Detalės</string>
 
-    <string name="archive_alert_message">The wallet will be backed up and then deleted!</string>
-    <string name="archive_alert_yes">Yes, do that!</string>
+    <string name="archive_alert_message">Piniginei bus padaryta atsarginė kopija, o pati išimta!</string>
+    <string name="archive_alert_yes">Taip, padaryti!</string>
     <string name="archive_alert_no">Ne, ačiū!</string>
 
     <string-array name="mixin" translatable="false">
@@ -344,10 +344,10 @@
     </string-array>
 
     <string-array name="priority">
-        <item>Priority Default</item>
-        <item>Priority Low</item>
-        <item>Priority Medium</item>
-        <item>Priority High</item>
+        <item>Numatytas prioritetas</item>
+        <item>Žemas prioritetas</item>
+        <item>Vidutinis prioritetas</item>
+        <item>Aukštas prioritetas</item>
     </string-array>
 
     <string-array name="currency" translatable="false">

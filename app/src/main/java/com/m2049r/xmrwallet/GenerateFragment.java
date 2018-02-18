@@ -331,11 +331,8 @@ public class GenerateFragment extends Fragment {
         String password = etWalletPassword.getEditText().getText().toString();
 
         long height;
-        try {
-            height = Long.parseLong(etWalletRestoreHeight.getEditText().getText().toString());
-        } catch (NumberFormatException ex) {
-            height = 0; // Keep calm and carry on!
-        }
+
+        height = 0;
 
         if (type.equals(TYPE_NEW)) {
             bGenerate.setEnabled(false);
