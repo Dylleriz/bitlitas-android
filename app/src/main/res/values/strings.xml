@@ -3,7 +3,7 @@
     <string name="login_activity_name" translatable="false">bitlitas</string>
     <string name="wallet_activity_name">Piniginė</string>
 
-    <string name="menu_testnet">Testnet</string>
+    <string name="menu_testnet">Testinis</string>
     <string name="menu_about">Apie</string>
     <string name="menu_privacy">Privatumo politika</string>
 
@@ -318,7 +318,7 @@
     <string name="receive_paymentid_invalid">16 or 64 Hex characters (0&#8211;9,a&#8211;f)</string>
     <string name="receive_integrated_paymentid_invalid">Must be empty with integrated address</string>
     <string name="receive_bitcoin_paymentid_invalid">Must be empty with bitcoin address</string>
-    <string name="receive_amount_invalid">Must be > 0</string>
+    <string name="receive_amount_invalid">Turi būti > 0</string>
 
     <string name="receive_amount_empty">Įveskite reikšmę</string>
     <string name="receive_amount_too_big">Max. %1$s</string>
