@@ -397,7 +397,7 @@ public class WalletService extends Service {
     public void onCreate() {
         // We are using a HandlerThread and a Looper to avoid loading and closing
         // concurrency
-        MoneroHandlerThread thread = new MoneroHandlerThread("WalletService",
+        BitlitasHandlerThread thread = new BitlitasHandlerThread("WalletService",
                 Process.THREAD_PRIORITY_BACKGROUND);
         thread.start();
 

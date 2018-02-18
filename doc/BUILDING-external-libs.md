@@ -1,6 +1,6 @@
 # BUILDING external libs
 
-Based on https://forum.getmonero.org/5/support/87643/building-monero-v0-10-3-1-for-android and the internet.
+Based on https://forum.getbitlitas.org/5/support/87643/building-bitlitas-v0-10-3-1-for-android and the internet.
 
 Do not follow this blindly. These instructions are for 32-bit only. 64-bit building mostly involves
 replacing "32" with "64".
@@ -98,14 +98,14 @@ git clone https://github.com/zeromq/cppzmq.git
 cp cppzmq/*.hpp zeromq/include/
 ```
 
-## And finally: Build Monero
+## And finally: Build Bitlitas
 ```
 cd /opt/android
-git clone https://github.com/monero-project/monero
-cd monero
+git clone https://github.com/bitlitas-project/bitlitas
+cd bitlitas
 ```
 ```
-# <patch monero code as needed>
+# <patch bitlitas code as needed>
 # also, don't abort on warnings (this is only an issue >v0.11.0.0):
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 index 1f74f59..2c791c0 100644
@@ -142,4 +142,4 @@ Ignore the warning from the last command - all static libraries are now in `lib`
 
 # Bringing it all together
 - Copy all .a libraries into the appropriate `external-libs` folders.
-- Copy `/opt/android/monero/src/wallet/wallet2_api.h` into `external-libs/monero/include`
+- Copy `/opt/android/bitlitas/src/wallet/wallet2_api.h` into `external-libs/bitlitas/include`

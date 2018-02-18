@@ -52,7 +52,7 @@ import com.m2049r.xmrwallet.model.Wallet;
 import com.m2049r.xmrwallet.model.WalletManager;
 import com.m2049r.xmrwallet.service.WalletService;
 import com.m2049r.xmrwallet.util.Helper;
-import com.m2049r.xmrwallet.util.MoneroThreadPoolExecutor;
+import com.m2049r.xmrwallet.util.BitlitasThreadPoolExecutor;
 import com.m2049r.xmrwallet.widget.Toolbar;
 
 import java.io.File;
@@ -839,7 +839,7 @@ public class LoginActivity extends SecureActivity
     public void createWallet(final String name, final String password,
                              final WalletCreator walletCreator) {
         new AsyncCreateWallet(name, password, walletCreator)
-                .executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR);
+                .executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR);
     }
 
     void walletGenerateError() {

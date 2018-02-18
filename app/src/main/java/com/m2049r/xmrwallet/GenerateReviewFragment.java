@@ -38,7 +38,7 @@ import com.m2049r.xmrwallet.widget.Toolbar;
 import com.m2049r.xmrwallet.model.Wallet;
 import com.m2049r.xmrwallet.model.WalletManager;
 import com.m2049r.xmrwallet.util.Helper;
-import com.m2049r.xmrwallet.util.MoneroThreadPoolExecutor;
+import com.m2049r.xmrwallet.util.BitlitasThreadPoolExecutor;
 
 import timber.log.Timber;
 
@@ -117,7 +117,7 @@ public class GenerateReviewFragment extends Fragment {
         String path = args.getString("path");
         String password = args.getString("password");
         this.type = args.getString("type");
-        new AsyncShow().executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR,
+        new AsyncShow().executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR,
                 path, password);
         return view;
     }

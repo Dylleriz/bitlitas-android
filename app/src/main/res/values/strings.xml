@@ -74,7 +74,7 @@
     <string name="text_generic_xmrto_error">Kodas: %1$d</string>
 
     <string name="text_retry">Touch to retry</string>
-    <string name="text_noretry_monero">Now we\'re stuck here!</string>
+    <string name="text_noretry_bitlitas">Now we\'re stuck here!</string>
     <string name="text_noretry">Uh-oh, XMR.TO does not seem be available right now!</string>
 
     <string name="text_send_btc_amount">%1$s BTC = %2$s LTL</string>

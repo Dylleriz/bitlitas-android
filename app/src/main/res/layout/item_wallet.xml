@@ -17,7 +17,7 @@
 
         <TextView
             android:id="@+id/tvName"
-            style="@style/MoneroText.Label"
+            style="@style/BitlitasText.Label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/tvAddress"
-            style="@style/MoneroText.Small"
+            style="@style/BitlitasText.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvName"

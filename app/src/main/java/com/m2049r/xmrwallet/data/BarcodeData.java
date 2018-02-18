@@ -28,7 +28,7 @@ import java.util.Map;
 import timber.log.Timber;
 
 public class BarcodeData {
-    public static final String XMR_SCHEME = "monero:";
+    public static final String XMR_SCHEME = "bitlitas:";
     public static final String XMR_PAYMENTID = "tx_payment_id";
     public static final String XMR_AMOUNT = "tx_amount";
 
@@ -63,11 +63,11 @@ public class BarcodeData {
     }
 
     static public BarcodeData fromQrCode(String qrCode) {
-        // check for monero uri
-        BarcodeData bcData = parseMoneroUri(qrCode);
-        // check for naked monero address / integrated address
+        // check for bitlitas uri
+        BarcodeData bcData = parseBitlitasUri(qrCode);
+        // check for naked bitlitas address / integrated address
         if (bcData == null) {
-            bcData = parseMoneroNaked(qrCode);
+            bcData = parseBitlitasNaked(qrCode);
         }
         // check for btc uri
         if (bcData == null) {
@@ -81,23 +81,23 @@ public class BarcodeData {
     }
 
     /**
-     * Parse and decode a monero scheme string. It is here because it needs to validate the data.
+     * Parse and decode a bitlitas scheme string. It is here because it needs to validate the data.
      *
-     * @param uri String containing a monero URL
+     * @param uri String containing a bitlitas URL
      * @return BarcodeData object or null if uri not valid
      */
 
-    static public BarcodeData parseMoneroUri(String uri) {
-        Timber.d("parseMoneroUri=%s", uri);
+    static public BarcodeData parseBitlitasUri(String uri) {
+        Timber.d("parseBitlitasUri=%s", uri);
 
         if (uri == null) return null;
 
         if (!uri.startsWith(XMR_SCHEME)) return null;
 
         String noScheme = uri.substring(XMR_SCHEME.length());
-        Uri monero = Uri.parse(noScheme);
+        Uri bitlitas = Uri.parse(noScheme);
         Map<String, String> parms = new HashMap<>();
-        String query = monero.getQuery();
+        String query = bitlitas.getQuery();
         if (query != null) {
             String[] args = query.split("&");
             for (String arg : args) {
@@ -109,7 +109,7 @@ public class BarcodeData {
                         namevalue.length > 1 ? Uri.decode(namevalue[1]) : "");
             }
         }
-        String address = monero.getPath();
+        String address = bitlitas.getPath();
         String paymentId = parms.get(XMR_PAYMENTID);
         String amount = parms.get(XMR_AMOUNT);
         if (amount != null) {
@@ -132,8 +132,8 @@ public class BarcodeData {
         return new BarcodeData(Asset.XMR, address, paymentId, amount);
     }
 
-    static public BarcodeData parseMoneroNaked(String address) {
-        Timber.d("parseMoneroNaked=%s", address);
+    static public BarcodeData parseBitlitasNaked(String address) {
+        Timber.d("parseBitlitasNaked=%s", address);
 
         if (address == null) return null;
 

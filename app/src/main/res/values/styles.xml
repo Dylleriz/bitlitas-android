@@ -28,296 +28,296 @@
         <item name="windowActionBar">false</item>
 
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorPrimary">@color/moneroText</item>
+        <item name="colorPrimary">@color/bitlitasText</item>
         <item name="colorAccent">@color/gradientPink</item>
 
-        <item name="android:spinnerItemStyle">@style/MoneroSpinnerItem</item>
-        <item name="android:spinnerStyle">@style/MoneroSpinner</item>
+        <item name="android:spinnerItemStyle">@style/BitlitasSpinnerItem</item>
+        <item name="android:spinnerStyle">@style/BitlitasSpinner</item>
     </style>
 
-    <style name="MoneroLabel" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="BitlitasLabel" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textColor">?colorPrimary</item>
-        <item name="android:textColorHint">@color/moneroText</item>
+        <item name="android:textColorHint">@color/bitlitasText</item>
     </style>
 
-    <style name="MoneroLabel.Small">
+    <style name="BitlitasLabel.Small">
         <item name="android:textSize">10sp</item>
     </style>
 
-    <style name="MoneroLabel.Gray">
-        <item name="android:textColor">@color/moneroGray</item>
+    <style name="BitlitasLabel.Gray">
+        <item name="android:textColor">@color/bitlitasGray</item>
     </style>
 
-    <style name="MoneroLabel.Caps">
+    <style name="BitlitasLabel.Caps">
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="MoneroLabel.Caps.Black">
-        <item name="android:textColor">@color/moneroBlack</item>
+    <style name="BitlitasLabel.Caps.Black">
+        <item name="android:textColor">@color/bitlitasBlack</item>
     </style>
 
-    <style name="MoneroLabel.Caps.Gray">
-        <item name="android:textColor">@color/moneroGray</item>
+    <style name="BitlitasLabel.Caps.Gray">
+        <item name="android:textColor">@color/bitlitasGray</item>
     </style>
 
-    <style name="MoneroLabel.Caps.Gray.Small">
+    <style name="BitlitasLabel.Caps.Gray.Small">
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="MoneroText.Funds">
+    <style name="BitlitasText.Funds">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/moneroFab</item>
+        <item name="android:textColor">@color/bitlitasFab</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Info">
+    <style name="BitlitasText.Info">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/moneroFab</item>
+        <item name="android:textColor">@color/bitlitasFab</item>
     </style>
 
-    <style name="MoneroText.Balance">
+    <style name="BitlitasText.Balance">
         <item name="android:textSize">32sp</item>
-        <item name="android:textColor">@color/moneroBlack</item>
+        <item name="android:textColor">@color/bitlitasBlack</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Balance.Orange">
+    <style name="BitlitasText.Balance.Orange">
         <item name="android:textColor">@color/gradientOrange</item>
     </style>
 
-    <style name="MoneroText.Unconfirmed">
+    <style name="BitlitasText.Unconfirmed">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/moneroGray</item>
+        <item name="android:textColor">@color/bitlitasGray</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.PosAmount">
+    <style name="BitlitasText.PosAmount">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/moneroBlack</item>
+        <item name="android:textColor">@color/bitlitasBlack</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.PosFee">
+    <style name="BitlitasText.PosFee">
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">#FF898989</item>
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="MoneroText.PosNote">
+    <style name="BitlitasText.PosNote">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#FF4A4A4A</item>
         <item name="android:textStyle">italic</item>
     </style>
 
-    <style name="MoneroText.PosDate">
+    <style name="BitlitasText.PosDate">
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">#FF616161</item>
         <item name="android:textStyle">normal</item>
     </style>
 
     <!-- textSize is in dp here to match the layout of the numpad-->
-    <style name="MoneroLabel.NumPad">
+    <style name="BitlitasLabel.NumPad">
         <item name="android:textSize">36sp</item>
-        <item name="android:textColor">@color/moneroBlack</item>
+        <item name="android:textColor">@color/bitlitasBlack</item>
         <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="MoneroLabel.Title">
+    <style name="BitlitasLabel.Title">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="MoneroLabel.Subtitle">
+    <style name="BitlitasLabel.Subtitle">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/moneroWhite</item>
+        <item name="android:textColor">@color/bitlitasWhite</item>
     </style>
 
-    <style name="MoneroLabel.Heading">
+    <style name="BitlitasLabel.Heading">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/moneroFab</item>
+        <item name="android:textColor">@color/bitlitasFab</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroFab" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="BitlitasFab" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/moneroFab</item>
+        <item name="android:textColor">@color/bitlitasFab</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="BitlitasText" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textColor">?colorPrimary</item>
-        <item name="android:textColorHint">@color/moneroText</item>
+        <item name="android:textColorHint">@color/bitlitasText</item>
     </style>
 
-    <style name="MoneroText.Gray">
-        <item name="android:textColor">@color/moneroGray</item>
+    <style name="BitlitasText.Gray">
+        <item name="android:textColor">@color/bitlitasGray</item>
     </style>
 
-    <style name="MoneroText.Black">
-        <item name="android:textColor">@color/moneroBlack</item>
+    <style name="BitlitasText.Black">
+        <item name="android:textColor">@color/bitlitasBlack</item>
     </style>
 
-    <style name="MoneroText.Monospace">
+    <style name="BitlitasText.Monospace">
         <item name="android:fontFamily">monospace</item>
     </style>
 
-    <style name="MoneroText.Monospace.Mnemonic">
+    <style name="BitlitasText.Monospace.Mnemonic">
         <item name="android:lineSpacingMultiplier">1.2</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Label">
+    <style name="BitlitasText.Label">
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="MoneroText.Confirm">
+    <style name="BitlitasText.Confirm">
         <item name="android:textSize">16sp</item>
     </style>
 
-    <style name="MoneroText.Confirm.Label">
+    <style name="BitlitasText.Confirm.Label">
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Label.Heading">
+    <style name="BitlitasText.Label.Heading">
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Label.Medium">
+    <style name="BitlitasText.Label.Medium">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="MoneroText.Small">
+    <style name="BitlitasText.Small">
         <item name="android:textSize">10sp</item>
     </style>
 
-    <style name="MoneroText.Medium">
+    <style name="BitlitasText.Medium">
         <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="MoneroText.Medium.Bold">
+    <style name="BitlitasText.Medium.Bold">
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Large">
+    <style name="BitlitasText.Large">
         <item name="android:textSize">24sp</item>
     </style>
 
 
-    <style name="MoneroText.Success">
+    <style name="BitlitasText.Success">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/dotGray</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MoneroText.Gray.SuccessFee">
+    <style name="BitlitasText.Gray.SuccessFee">
         <item name="android:textSize">18sp</item>
     </style>
 
-    <style name="MoneroText.Button" parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    <style name="BitlitasText.Button" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/gradientOrange</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="MoneroText.Button.Small">
+    <style name="BitlitasText.Button.Small">
         <item name="android:textSize">10sp</item>
     </style>
 
-    <style name="MoneroButton" parent="@style/Widget.AppCompat.Button">
+    <style name="BitlitasButton" parent="@style/Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_selector</item>
-        <item name="android:textColor">@color/moneroWhite</item>
-        <item name="android:textAppearance">@style/MoneroLabel</item>
+        <item name="android:textColor">@color/bitlitasWhite</item>
+        <item name="android:textAppearance">@style/BitlitasLabel</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="MoneroButton.Green">
+    <style name="BitlitasButton.Green">
         <item name="android:background">@drawable/button_selector_green</item>
     </style>
 
-    <style name="MoneroButton.Small">
+    <style name="BitlitasButton.Small">
         <item name="android:textSize">11sp</item>
     </style>
 
-    <style name="MoneroButton.Alert">
-        <item name="android:textColor">@color/moneroBlack</item>
+    <style name="BitlitasButton.Alert">
+        <item name="android:textColor">@color/bitlitasBlack</item>
         <item name="android:background">@color/gradientPink</item>
     </style>
 
-    <style name="MoneroButton.ReallySend"></style>
+    <style name="BitlitasButton.ReallySend"></style>
 
-    <style name="MoneroButton.Take">
+    <style name="BitlitasButton.Take">
         <item name="android:background">@color/take</item>
     </style>
 
-    <style name="MoneroButton.Give">
+    <style name="BitlitasButton.Give">
         <item name="android:background">@color/give</item>
     </style>
 
-    <style name="MoneroEdit" parent="MoneroText">
+    <style name="BitlitasEdit" parent="BitlitasText">
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:backgroundTint">@color/gradientPink</item>
     </style>
 
-    <style name="MoneroEdit.Amount">
+    <style name="BitlitasEdit.Amount">
         <!--item name="android:textSize">32sp</item-->
         <item name="android:textColor">@color/gradientOrange</item>
         <item name="android:textStyle">bold</item>
     </style>
 
 
-    <style name="MoneroEdit.Medium" parent="MoneroText.Medium">
+    <style name="BitlitasEdit.Medium" parent="BitlitasText.Medium">
         <item name="android:textColor">?colorPrimary</item>
         <item name="android:backgroundTint">@color/gradientPink</item>
     </style>
 
-    <style name="MoneroEdit.Small">
+    <style name="BitlitasEdit.Small">
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="MoneroProgress" parent="@android:style/Widget.ProgressBar.Horizontal">
+    <style name="BitlitasProgress" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressTint">?colorPrimaryDark</item>
         <item name="android:progressBackgroundTint">?colorPrimary</item>
     </style>
 
-    <style name="MoneroListView" parent="@android:style/Widget.ListView">
+    <style name="BitlitasListView" parent="@android:style/Widget.ListView">
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0dp</item>
     </style>
 
-    <style name="MoneroSpinner" parent="@style/Widget.AppCompat.Spinner">
+    <style name="BitlitasSpinner" parent="@style/Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/backgound_spinner</item>
     </style>
 
-    <style name="MoneroSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
-        <item name="android:textAppearance">@style/MoneroTextAppearanceSpinnerItem</item>
+    <style name="BitlitasSpinnerItem" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/BitlitasTextAppearanceSpinnerItem</item>
     </style>
 
-    <style name="MoneroTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    <style name="BitlitasTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
         <item name="android:textColor">@color/gradientOrange</item>
     </style>
 
-    <style name="MoneroSpinnerItem.Balance">
+    <style name="BitlitasSpinnerItem.Balance">
         <item name="android:textSize">32sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
 
-    <style name="MoneroTextAppearanceSpinnerItemGray" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
-        <item name="android:textColor">@color/moneroGray</item>
+    <style name="BitlitasTextAppearanceSpinnerItemGray" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/bitlitasGray</item>
     </style>
 
-    <style name="MoneroSpinnerGray" parent="@style/Widget.AppCompat.Spinner">
+    <style name="BitlitasSpinnerGray" parent="@style/Widget.AppCompat.Spinner">
         <item name="android:background">@drawable/backgound_spinner_gray</item>
     </style>
 
-    <style name="MoneroSpinnerItemGray" parent="android:Widget.TextView.SpinnerItem">
-        <item name="android:textAppearance">@style/MoneroTextAppearanceSpinnerItemGray</item>
+    <style name="BitlitasSpinnerItemGray" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/BitlitasTextAppearanceSpinnerItemGray</item>
     </style>
 
 </resources>

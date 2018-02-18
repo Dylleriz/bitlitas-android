@@ -28,26 +28,26 @@ import android.os.Process;
  * used to create handler classes. Note that start() must still be called.
  * The started Thread has a stck size of STACK_SIZE (=5MB)
  */
-public class MoneroHandlerThread extends Thread {
+public class BitlitasHandlerThread extends Thread {
     // from src/cryptonote_config.h
     static public final long THREAD_STACK_SIZE = 5 * 1024 * 1024;
     private int mPriority;
     private int mTid = -1;
     private Looper mLooper;
 
-    public MoneroHandlerThread(String name) {
+    public BitlitasHandlerThread(String name) {
         super(null, null, name, THREAD_STACK_SIZE);
         mPriority = Process.THREAD_PRIORITY_DEFAULT;
     }
 
     /**
-     * Constructs a MoneroHandlerThread.
+     * Constructs a BitlitasHandlerThread.
      *
      * @param name
      * @param priority The priority to run the thread at. The value supplied must be from
      *                 {@link android.os.Process} and not from java.lang.Thread.
      */
-    MoneroHandlerThread(String name, int priority) {
+    BitlitasHandlerThread(String name, int priority) {
         super(null, null, name, THREAD_STACK_SIZE);
         mPriority = priority;
     }

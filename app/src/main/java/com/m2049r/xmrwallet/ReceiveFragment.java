@@ -50,7 +50,7 @@ import com.m2049r.xmrwallet.data.BarcodeData;
 import com.m2049r.xmrwallet.model.Wallet;
 import com.m2049r.xmrwallet.model.WalletManager;
 import com.m2049r.xmrwallet.util.Helper;
-import com.m2049r.xmrwallet.util.MoneroThreadPoolExecutor;
+import com.m2049r.xmrwallet.util.BitlitasThreadPoolExecutor;
 import com.m2049r.xmrwallet.widget.ExchangeView;
 import com.m2049r.xmrwallet.widget.Toolbar;
 
@@ -248,7 +248,7 @@ public class ReceiveFragment extends Fragment {
     }
 
     private void loadAndShow(String walletPath, String password) {
-        new AsyncShow().executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR,
+        new AsyncShow().executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR,
                 walletPath, password);
     }
 
@@ -360,7 +360,7 @@ public class ReceiveFragment extends Fragment {
     }
 
     private Bitmap addLogo(Bitmap qrBitmap) {
-        Bitmap logo = getMoneroLogo();
+        Bitmap logo = getBitlitasLogo();
         int qrWidth = qrBitmap.getWidth();
         int qrHeight = qrBitmap.getHeight();
         int logoWidth = logo.getWidth();
@@ -384,9 +384,9 @@ public class ReceiveFragment extends Fragment {
 
     private Bitmap logo = null;
 
-    private Bitmap getMoneroLogo() {
+    private Bitmap getBitlitasLogo() {
         if (logo == null) {
-            logo = Helper.getBitmap(getContext(), R.drawable.ic_monero_logo_b);
+            logo = Helper.getBitmap(getContext(), R.drawable.ic_bitlitas_logo_b);
         }
         return logo;
     }

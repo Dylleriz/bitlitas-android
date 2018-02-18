@@ -29,7 +29,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/BitlitasLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -48,7 +48,7 @@
 
         <TextView
             android:id="@+id/tvAddress"
-            style="@style/MoneroText.Medium"
+            style="@style/BitlitasText.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -78,10 +78,10 @@
                 app:errorEnabled="true">
 
                 <android.support.design.widget.TextInputEditText
-                    style="@style/MoneroEdit"
+                    style="@style/BitlitasEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/moneroGray"
+                    android:backgroundTint="@color/bitlitasGray"
                     android:hint="@string/receive_paymentid_hint"
                     android:imeOptions="actionDone"
                     android:inputType="textMultiLine"
@@ -91,7 +91,7 @@
 
             <Button
                 android:id="@+id/bPaymentId"
-                style="@style/MoneroText.Button.Small"
+                style="@style/BitlitasText.Button.Small"
                 android:layout_width="56dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -99,7 +99,7 @@
                 android:background="?android:selectableItemBackground"
                 android:drawableTop="@drawable/ic_settings_orange_24dp"
                 android:text="@string/send_generate_paymentid_hint"
-                android:textColor="@color/moneroGray"
+                android:textColor="@color/bitlitasGray"
                 android:visibility="visible" />
 
         </LinearLayout>
@@ -110,7 +110,7 @@
 
             <TextView
                 android:id="@+id/tvQrCode"
-                style="@style/MoneroFab"
+                style="@style/BitlitasFab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

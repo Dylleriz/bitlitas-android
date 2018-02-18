@@ -413,7 +413,7 @@ public class WalletActivity extends SecureActivity implements WalletFragment.Lis
             });
             return true;
         } catch (ClassCastException ex) {
-            // not in wallet fragment (probably send monero)
+            // not in wallet fragment (probably send bitlitas)
             Timber.d(ex.getLocalizedMessage());
             // keep calm and carry on
         }
@@ -550,7 +550,7 @@ public class WalletActivity extends SecureActivity implements WalletFragment.Lis
                 }
             });
         } catch (ClassCastException ex) {
-            // not in wallet fragment (probably send monero)
+            // not in wallet fragment (probably send bitlitas)
             Timber.d(ex.getLocalizedMessage());
             // keep calm and carry on
         }
@@ -566,7 +566,7 @@ public class WalletActivity extends SecureActivity implements WalletFragment.Lis
                     if (walletFragment != null)
                         walletFragment.setProgress(n);
                 } catch (ClassCastException ex) {
-                    // not in wallet fragment (probably send monero)
+                    // not in wallet fragment (probably send bitlitas)
                     Timber.d(ex.getLocalizedMessage());
                     // keep calm and carry on
                 }
