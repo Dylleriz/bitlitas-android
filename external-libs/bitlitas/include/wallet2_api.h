@@ -775,5 +775,3 @@ struct WalletManagerFactory
 
 }
 
-namespace Bitlitukas = Bitlitas;
-
