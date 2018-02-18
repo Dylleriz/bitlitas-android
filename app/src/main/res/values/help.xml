@@ -1,152 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="help_create_new"><![CDATA[
-        <h1>Create Wallet - New</h1>
-        <p>If you need a new Monero Address!</p>
-        <p>Enter a unique wallet name and password.
-        The password is used for securing your wallet data on the device. Use a strong password -
-        even better use a passphrase.</p>
-        <h2>Note your Mnemonic Seed!</h3>
-        <p>On the following screen you will find your 25-word \"Mnemonic Seed\".
-        This is the only data needed to recover your wallet at a later point
-        and gain full access to your funds.
-        Keeping this secure and private is very important, as it gives <em>anyone</em>
-        full access to your funds!</p>
-        <p>If you lose your wallet password, you can still recover your wallet with the Mnemonic Seed.</p>
-        <p>There is no way to recover your Mnemonic Seed, if you lose it all your funds will be lost!
-        The Mnemonic Seed can also never be changed, and if it is stolen or otherwise compromised,
-        you will have to move your funds to new wallet (with a new Mnemonic Seed). Therefore, it is best
-        that you backup your Mnemonic Seed by writing it down and storing it in <em>multiple</em> safe
-        and secure places.</p>
+        <h1>Sukurti naują piniginę</h1>
+        <p>Jeigu tau reikia naujo Bitlitas adreso!</p>
+        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
+        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.</p>
+        <h2>Būtinai užsirašykite žodžių paslaptį!</h3>
+        <p>Šie žodžiai yra pagrindinis įrankis susigrąžinti pamestą piniginę ir ją gauti priėjimą prie santaupų.
+        Labai svarbu šiuos žodžius saugoti slaptai</p>
+        <p>Praradus piniginės raktus bei paslaptį, nėra jokios galimybės atgauti savo santaupų!
+        Paslaptis nėra keičiama, todėl nutekinus nebegalėsite pasikeisti. Geriausia paslaptį užsirašyti atskirai ir laikyti saugiose vietoje.</p>
     ]]></string>
 
     <string name="help_create_seed"><![CDATA[
-        <h1>Create Wallet - Seed</h1>
-        <p>If you already have a Monero Address and want to recover the transactions from the blockchain!</p>
-        <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the device.
-        Use a strong password - even better use a passphrase.</p>
-        <p>Enter your Seed in the field \"Mnemonic Seed\".<p>
-        <p>If you know the block number of the first transaction used for this address, enter it in the
-        field \"Restore Height\" - leaving it blank will scan the <em>entire</em> blockchain for
-        transactions belonging to your address. This takes a <em>long</em> time.</p>
+        <h1>Atkurti pagal paslaptį</h1>
+        <p>Jeigu jau turi adresą, gali jį atkurti!</p>
+        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
+        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.</p>
+        <p>Įveskite žodžių paslaptį<p>
+        <p>Jeigu žinote kokiame aukštyje buvo sukurta piniginė - įveskite. Priešingu atveju palikite tuščia. Bus skenuojama visa grandinė, tai gali užtrukti.</p>
     ]]></string>
 
     <string name="help_create_keys"><![CDATA[
-        <h1>Create Wallet - Keys</h1>
-        <p>If you are recovering your wallet using your keys!</p>
-        <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the device.
-        Use a strong password - even better use a passphrase.<p>
-        <p>Enter your Monero Address in the field \"Public Address\" and fill out \"View Key\" and  \"Spend Key\".</p>
-        <p>If you know the block number of the first transaction used for this address, enter it in the
-        field \"Restore Height\" - leaving it blank will scan the <em>entire</em> blockchain for
-        transactions belonging to your address. This takes a <em>long</em> time.</p>
+        <h1>Atkurti pagal raktus</h1>
+        <p>Jeigu norite atkurti piniginę pagal raktus!</p>
+        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
+        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.<p>
+        <p>Įveskite vieša adresą, stebėjimo raktą ir išleidimo raktą</p>
+        <p>Jeigu žinote kokiame aukštyje buvo sukurta piniginė - įveskite. Priešingu atveju palikite tuščia. Bus skenuojama visa grandinė, tai gali užtrukti.</p>
     ]]></string>
 
     <string name="help_create_view"><![CDATA[
-        <h1>Create Wallet - View</h1>
-        <p>If you just want to monitor incoming transactions to a wallet!</p>
-        <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the device.
-        Use a strong password - even better use a passphrase.<p>
-        <p>Enter your Monero Address in the field \"Public Address\" and fill out the \"View Key\".</p>
-        <p>If you know the block number of the first transaction used for this address, enter it in the
-        field \"Restore Height\" - leaving it blank will scan the <em>entire</em> blockchain for
-        transactions belonging to your address. This takes a <em>long</em> time.</p>
+        <h1>Atkurti stebėjimo piniginę</h1>
+        <p>Jeigu norite stebėti piniginės transakcijas!</p>
+        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
+        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.<p>
+        <p>Įveskite vieša adresą ir stebėjimo raktą</p>
+        <p>Jeigu žinote kokiame aukštyje buvo sukurta piniginė - įveskite. Priešingu atveju palikite tuščia. Bus skenuojama visa grandinė, tai gali užtrukti.</p>
     ]]></string>
 
     <string name="help_details"><![CDATA[
-        <h1>Wallet Details</h1>
-        <h2>Public address</h2>
-        Your public address is like your bank account number you can share this with anyone without
-        having to fear losing your Monero. People will send Monero to your wallet using this address.
-        <h2>Mnemonic Seed</h2>
-        This is the only data needed to recover your wallet at a later point and gain full access to
-        your funds. Keeping this private and secure is very important, as it gives <em>anyone</em> full
-        access to your Monero! If you haven’t written this down somewhere safe please do!
-        <h2>View key</h2>
-        Your view key can be used to monitor incoming transactions to your wallet without giving
-        permission to spend the funds inside your wallet.
-        <h2>Spend key</h2>
-        Your spend key allows anyone to spend the Monero associated with your wallet, so don’t tell
-        anyone this key, keep it safe like your Mnemonic Seed.
+        <h1>Piniginės detalės</h1>
+        <h2>Viešas adresas</h2>
+        Viešas adresas yra lyg Jūsų banko sąskaitos numeris, kuriuo galite dalintis nebijodami prarasti santaupų.
+        <h2>Paslaptis</h2>
+        Tai yra atsarginis raktas, suteikiantis jums pilną kontrolę atkuriant piniginę.
+        <h2>Stebėjimo raktas</h2>
+        Su šiuo raktu galite stėbėti pervedimus, tačiau negalite jų atlikti.
+        <h2>Išleidimo raktas</h2>
+        Su šiuo raktu galite valdyti savo transakcijas.
     ]]></string>
 
     <string name="help_list"><![CDATA[
-        <h1>Wallet List</h1>
-        <h2>Node</h2>
-        <p>Monerujo uses a Remote Node to communicate with the Monero Network without having
-        to download and store a copy of the whole blockchain itself. You can find a list of popular
-        remote nodes or learn how to run your own remote node here https://moneroworld.com/<p>
-        <p>Monerujo comes with some Remote Nodes preset. It remembers the last five nodes used.</p>
-        <h2>Wallets</h2>
-        <p>Here you see your wallets. They are located in the <tt>monerujo</tt> folder
-        in the internal storage of your device. You can use a file explorer app to see them.
-        You should make backups of this folder on a regular basis to off-device storage in
-        case your device explodes or gets stolen.</p>
-        <p>Select a wallet to open it or press the \"+\" to create a new one.
-        Or select one of the wallet operations:</p>
-        <h3>Details</h3>
-        <p>Show the wallet details, seed &amp; keys.</p>
-        <h3>Receive</h3>
-        <p>Make a QR code for receiving Moneroj.</p>
-        <h3>Rename</h3>
-        <p>Rename the wallet. Backups are not renamed.</p>
-        <h3>Backup</h3>
-        <p>Make a copy of the wallet in the <tt>backups</tt> folder inside the <tt>monerujo</tt>
-        overwriting previous copies there.</p>
-        <h3>Archive</h3>
-        <p>Make a backup and delete the wallet afterwards. The copy remains in the <tt>backups</tt>
-        folder. If you no longer need your backups you should delete them with a file explorer or
-        secure delete app.</p>
+        <h2>Jungtis</h2>
+        <p>Bitlito programėlė naudoja nutolusias jungtis tam, jog nereiktu parsisiųsti visos blokų grandinės. Galite naudoti kitų leidžiamas jungtis arba paleisti savo.<p>
+        <h2>Piniginės</h2>
+        <p>Jūsų piniginės yra saugomos <tt>bitilitas</tt>, telefono vidinėje atmintyje.
+        Jums reikėtų šiuos failus išsisaugoti kažkur kitur, jeigu šis telefonas sugestu arba būtų pavogtas.</p>
+        <h3>Detalės</h3>
+        <p>Rodoma piniginės informacija, paslaptis bei raktai</p>
+        <h3>Gauti</h3>
+        <p>Susikurkite QR kodą ir gauti Bitlitus</p>
+        <h3>Pervadinti</h3>
+        <p>Pervadinant piniginę, atsarginės kopijos nėra pervadinamos</p>
+        <h3>Kopija</h3>
+        <p>Sukurkite piniginės kopiją aplanke <tt>backups</tt>, kuris yra <tt>bitlitas</tt> aplanke.</p>
+        <h3>Šalinti</h3>
+        <p>Padaro atsarginę kopiją ir pašalina piniginę. Jeigu visiškai norite ištrinti piniginę, rankiniu būdų pašalinkite kopiją.</p>
     ]]></string>
 
     <string name="help_wallet"><![CDATA[
-        <h1>The Wallet</h1>
-        <h2>Scanning</h2>
-        Because Monero likes to keep things private, every time you open a Monerujo wallet we have to
-        scan the blockchain to see if any new Moneroj have been sent to your wallet, this only
-        stores information to your phone which belongs to your wallet. Sometimes it can take a while
-        because you haven’t synced in a long time.
-        <h2>The Balance</h2>
-        <p><b>Help! My wallet balance has disappeared or is unconfirmed!</b><br/>
-        Don’t panic! When you send funds from your wallet, some of your balance will temporarily show
-        as unconfirmed.
-        This happens as a result of how Monero is exchanged on the blockchain and how change works.
-        Read more about change at https://getmonero.org/resources/moneropedia/change.html
-        <h2>Transaction List</h2>
-        <p>A list of the wallet transactions. In view wallets, only incoming transactions are shown.</p>
+        <h1>Piniginė</h1>
+        <h2>Skenavimas</h2>
+        Tam, kad gauti naujus pervedimus blokų grandinė turi būti atnaujinta. Kartais tai gali užtrukti, ypač jei atnaujinta buvo prieš ilgą laiką.
+        <h2>Balansas</h2>
+        <p><b>Padėkite! Piniginės balansas dingo arba nepatvirtintas!</b><br/>
+        Nesinervuokite! Kartais siunčiant pinigus dalis pinigų yra laikinai užšaldoma.
+        Tai normalus procesas dalinant blokų sumas, po kurio laiko ir blokų grąžą vėl galėsite naudoti.
+        <h2>Pervedimų sąrašas</h2>
+        <p>Čia rodomi visi ateinantys mokėjimai</p>
     ]]></string>
 
     <string name="help_tx_details"><![CDATA[
-        <h1>Transaction Details</h1>
-        <h2>Destination</h2>
-        This is the public address of the wallet you sent Monero to
-        <h2>PaymentID</h2>
-        You can use a Payment ID to identify the reason you sent Monero between two parties this is
-        fully optional and private. For example it can allow a Business to reconcile your transaction
-        with an item you bought.
+        <h1>Pervedimo detalės</h1>
+        <h2>Gavėjas</h2>
+        Adresas žmogaus, su kuriuo buvo padarytas pervedimas
+        <h2>Pervedimo ID</h2>
+        Galite mokėjimams naudoti unikalų id, taip identifikuodami, kas atliko pervedimą. Pavyzdžiui, taip verslas gali žinoti kas konkrečiai atsiskaitė už prekę.
         <h2>TX ID</h2>
-        This is your Transaction ID you can use it to identify your obfuscated transaction on a Monero
-        Blockchain explorer like <a href="https://xmrchain.net/">https://xmrchain.net/</a>
+        Transakcijos id, kurio informaciją galite pasižiūrėti blokų naršyklėje <a href="https://explorer.bitlitas.lt/">https://explorer.bitlitas.lt/</a>
         <h2>TX KEY (Transaction Key)</h2>
-        This is your transaction private key, keep this safe as revealing this to a third party
-        reveals which signature in a ring is yours, thereby making your transaction transparent.
-        <h2>Block</h2>
-        This was the block your transaction was included in.
+        Transakcijos raktas. Laikyite jį saugiai. Pasidalinti galite, jei norite, jog Jūsų pervedimas nebūtų privatus.
     ]]></string>
 
     <string name="help_send"><![CDATA[
-        <h1>Send</h1>
-        <h2>Receiver’s address</h2>
-        <p>This is the public address of the wallet you are sending Moneroj to, you can copy this from
-        your clipboard, scan a QR code or enter it manually. Make sure you triple check this to
-        ensure you aren’t sending coins to the wrong address.</p>
-        <p>In addition to sending XMR, you can send BTC through the XMR.TO service (see https://xmr.to
-        for details). See the section on sending BTC below.</p>
-        <h2>Payment ID</h2>
-        <p>You can use a Payment ID to identify the reason you sent Monero between two parties. This
-        is fully optional and private. For example it can allow a business to reconcile your
-        transaction with an item you bought.<p>
-        <h2>Ring size</h2>
+        <h1>Siųsti</h1>
+        <h2>Gavėjo adresas</h2>
+        <p>Adresas į kurį keliauja BitLitai. Galite įklijuoti, nuskenuoti QR arba įvesti ranka. Pasitikrinkite ar įvedėte teisingą adresą.</p>
+        <h2>Pervedimo ID</h2>
+        <p>Galite mokėjimams naudoti unikalų id, taip identifikuodami, kas atliko pervedimą. Pavyzdžiui, taip verslas gali žinoti kas konkrečiai atsiskaitė už prekę.<p>
+        <h2>Žiedų dydis</h2>
         <p>There are a number of ring sizes to choose from in Monerujo. If you are a beginner user
         we recommend you stick with a ring size of 5. Increasing the ring size above 5 increases
         the amount of signers in a ring signature, theoretically providing increased plausible

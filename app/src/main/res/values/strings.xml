@@ -87,7 +87,7 @@
     <string name="label_send_txinfo">See TX details for more details</string>
     <string name="label_send_btc_xmrto_key_lb">Secret Key\nXMR.TO</string>
     <string name="label_send_btc_xmrto_key">XMR.TO Secret Key</string>
-    <string name="label_send_btc_address">Destination BTC Address</string>
+    <string name="label_send_btc_address">Gavėjo BTC adresas</string>
     <string name="label_send_btc_amount">Suma</string>
     <string name="label_send_btc_create_order">Creating XMR.TO Order</string>
 
@@ -170,7 +170,7 @@
     <string name="local_service_connected">Bitlitas servisas prijungtas</string>
     <string name="local_service_disconnected">Bitlitas servisas atjungtas</string>
 
-    <string name="status_synced">Sinkronizuota:</string>
+    <string name="status_synced">Sinchronizuota:</string>
     <string name="status_remaining">blokų liko</string>
     <string name="status_syncing">Skenuojama:</string>
 
@@ -238,7 +238,7 @@
     <string name="send_address_hint">Gavėjo adresas</string>
     <string name="send_paymentid_hint">Pervedimo ID (pasirinktinai)</string>
     <string name="send_amount_hint">0.00</string>
-    <string name="send_notes_hint">Private Notes (pasirinktinai)</string>
+    <string name="send_notes_hint">Privatus užrašas (pasirinktinai)</string>
     <string name="send_priority_hint">Tx Priority</string>
     <string name="send_mixin_hint">Mixin</string>
     <string name="send_sweep_hint">Sweep</string>
@@ -246,8 +246,8 @@
     <string name="send_qr_hint">Skenuoti</string>
     <string name="send_prepare_hint">Paruošti</string>
     <string name="send_dispose_hint">Dispose (Undo)</string>
-    <string name="send_send_label">Spend my sweet Bitlitasj</string>
-    <string name="send_send_timed_label">Spend my sweet Bitlitasj (%1$s)</string>
+    <string name="send_send_label">Išleisti mano BitLitus</string>
+    <string name="send_send_timed_label">Išleisti mano BitLitus (%1$s)</string>
     <string name="send_really_send_hint">Paskutinis žingsnis - Patvirtinimas!</string>
     <string name="send_qr_invalid">Ne QR kodas</string>
     <string name="send_qr_address_invalid">Not a valid payment QR code</string>
@@ -255,11 +255,11 @@
     <string name="send_preparing_progress">Paruošiama transakcija</string>
     <string name="send_title">Siųsti</string>
     <string name="send_available">Balansas: %1$s LTL</string>
-    <string name="send_address_title">Address</string>
+    <string name="send_address_title">Adresas</string>
     <string name="send_amount_title">Suma</string>
-    <string name="send_settings_title">Nustatymai</string>
+    <string name="send_settings_title">Toliau</string>
     <string name="send_confirm_title">Patvirtinti</string>
-    <string name="send_success_title">Baigta</string>
+    <string name="send_success_title">Baigti</string>
     <string name="send_summary_heading">Apibendrinimas</string>
     <string name="send_amount_too_large">Suma > Funds</string>
 
@@ -268,7 +268,7 @@
     <string name="send_fee_label">Mokestis</string>
     <string name="send_dust_label">Dust</string>
     <string name="send_total_btc_label">Viso (LTL)</string>
-    <string name="send_total_label">Visos</string>
+    <string name="send_total_label">Viso</string>
 
     <string name="send_amount">%1$s LTL</string>
     <string name="send_fee">+%1$s mokestis</string>
@@ -288,8 +288,8 @@
     <string name="tx_id">TX ID</string>
     <string name="tx_id_btc">TX ID\n</string>
     <string name="tx_key">TX Raktas</string>
-    <string name="tx_destination">Destination</string>
-    <string name="tx_destination_btc">Destination\n(BTC)</string>
+    <string name="tx_destination">Gavėjas</string>
+    <string name="tx_destination_btc">Gavėjas\n(BTC)</string>
     <string name="tx_paymentId">Pervedimo ID</string>
     <string name="tx_blockheight">Blokas</string>
     <string name="tx_amount">Suma</string>
@@ -337,10 +337,10 @@
     <string name="archive_alert_no">Ne, ačiū!</string>
 
     <string-array name="mixin" translatable="false">
-        <item>Ringsize 5</item>
-        <item>Ringsize 8</item>
-        <item>Ringsize 13</item>
-        <item>Ringsize 26</item>
+        <item>Žiedai 5</item>
+        <item>Žiedai 8</item>
+        <item>Žiedai 13</item>
+        <item>Žiedai 26</item>
     </string-array>
 
     <string-array name="priority">
