@@ -17,9 +17,11 @@
 package com.litas.ltlwallet;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
@@ -39,6 +41,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.FileOutputStream;
+import android.os.Environment;
+import java.io.File;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
@@ -182,6 +188,20 @@ public class ReceiveFragment extends Fragment {
             }
         });
 
+        qrCodeFull.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                qrCodeFull.setImageBitmap(null);
+                qrCodeFull.setVisibility(View.GONE);
+
+                ShareQRImage(((BitmapDrawable) qrCode.getDrawable()).getBitmap());
+
+                Toast.makeText(getActivity(), getString(R.string.message_qr_saved), Toast.LENGTH_LONG).show();
+
+                return true;
+            }
+        });
+
         showProgress();
         clearQR();
 
@@ -197,6 +217,32 @@ public class ReceiveFragment extends Fragment {
             show(walletName, address);
         }
         return view;
+    }
+
+    private void ShareQRImage(Bitmap finalBitmap) {
+
+        String root = Environment.getExternalStorageDirectory().getAbsolutePath();
+        File myDir = new File(root + "/bitlitas/qr");
+        myDir.mkdirs();
+
+        String fname = "qr.jpg";
+        File file = new File (myDir, fname);
+        if (file.exists ()) file.delete ();
+        try {
+            FileOutputStream out = new FileOutputStream(file);
+            finalBitmap.compress(Bitmap.CompressFormat.JPEG, 90, out);
+            out.flush();
+            out.close();
+
+            final Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("image/jpg");
+            final File photoFile = new File(myDir, fname);
+            shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(photoFile));
+            startActivity(Intent.createChooser(shareIntent, "Share image using"));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     void copyAddress() {

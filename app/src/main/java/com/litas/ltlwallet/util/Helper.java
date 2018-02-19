@@ -31,6 +31,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.VectorDrawable;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -40,9 +41,14 @@ import com.litas.ltlwallet.R;
 import com.litas.ltlwallet.model.Wallet;
 import com.litas.ltlwallet.model.WalletManager;
 
+
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
@@ -53,8 +59,13 @@ import javax.net.ssl.HttpsURLConnection;
 import okhttp3.HttpUrl;
 import timber.log.Timber;
 
+import static android.content.ContentValues.TAG;
+
 public class Helper {
-    static private final String WALLET_DIR = "monerujo";
+    static private final String WALLET_DIR = "bitlitas";
+
+    //TODO::TEMPORARY
+    static private final String WALLET_DIR_OLD = "monerujo";
 
     static public int DISPLAY_DIGITS_INFO = 5;
 
@@ -74,7 +85,75 @@ public class Helper {
             Timber.e(msg);
             throw new IllegalStateException(msg);
         }
+
+        //If wallets in old directory
+        //TODO::TEMPORARY, WHILE OLD USERS HAVE WALLETS IN WRONG PLACE
+        File oldDir = new File(Environment.getExternalStorageDirectory(), WALLET_DIR_OLD);
+
+        if (oldDir.exists()) {
+            try {
+                copyFolder(oldDir, dir);
+                deleteDir(oldDir);
+            } catch (Exception e) {
+                Log.e(TAG, e.getMessage());
+            }
+
+        }
+
         return dir;
+    }
+
+    public static void copyFolder(File src, File dest)
+            throws IOException {
+
+        if (src.isDirectory()) {
+
+            //if directory not exists, create it
+            if (!dest.exists()) {
+                dest.mkdir();
+                System.out.println("Directory copied from "
+                        + src + "  to " + dest);
+            }
+
+            //list all the directory contents
+            String files[] = src.list();
+
+            for (String file : files) {
+                //construct the src and dest file structure
+                File srcFile = new File(src, file);
+                File destFile = new File(dest, file);
+                //recursive copy
+                copyFolder(srcFile, destFile);
+            }
+
+        } else {
+            //if file, then copy it
+            //Use bytes stream to support all file types
+            InputStream in = new FileInputStream(src);
+            OutputStream out = new FileOutputStream(dest);
+
+            byte[] buffer = new byte[1024];
+
+            int length;
+            //copy the file content in bytes
+            while ((length = in.read(buffer)) > 0) {
+                out.write(buffer, 0, length);
+            }
+
+            in.close();
+            out.close();
+            System.out.println("File copied from " + src + " to " + dest);
+        }
+    }
+
+    static private void deleteDir(File file) {
+        File[] contents = file.listFiles();
+        if (contents != null) {
+            for (File f : contents) {
+                deleteDir(f);
+            }
+        }
+        file.delete();
     }
 
     static public final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;

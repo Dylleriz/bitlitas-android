@@ -192,6 +192,8 @@
 
     <string name="message_exchange_failed">Cannot get exchange rate!\nUse XMR/XMR or try again</string>
 
+    <string name="message_qr_saved">QR buvo išsaugotas "/bitlitas/qr/" aplanke</string>
+
     <string name="generate_title">Sukurti piniginę</string>
     <string name="generate_name_hint">Piniginės pavadinimas</string>
     <string name="generate_password_hint">Slaptažodis</string>
