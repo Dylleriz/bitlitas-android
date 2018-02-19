@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name" translatable="false">bitlitas</string>
-    <string name="login_activity_name" translatable="false">bitlitas</string>
+    <string name="app_name" translatable="false">Bitlitas</string>
+    <string name="login_activity_name" translatable="false">Bitlitas</string>
     <string name="wallet_activity_name">Piniginė</string>
 
     <string name="menu_testnet">Testinis</string>
@@ -258,7 +258,7 @@
     <string name="send_address_title">Adresas</string>
     <string name="send_amount_title">Suma</string>
     <string name="send_settings_title">Toliau</string>
-    <string name="send_confirm_title">Patvirtinti</string>
+    <string name="send_confirm_title">Gerai</string>
     <string name="send_success_title">Baigti</string>
     <string name="send_summary_heading">Apibendrinimas</string>
     <string name="send_amount_too_large">Suma > Funds</string>
