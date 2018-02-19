@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 m2049r et al.
+ * Copyright (c) 2017 litas et al.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.m2049r.xmrwallet.xmrto.network;
+package com.litas.ltlwallet.xmrto.network;
 
-import com.m2049r.xmrwallet.xmrto.api.XmrToCallback;
-import com.m2049r.xmrwallet.xmrto.XmrToError;
-import com.m2049r.xmrwallet.xmrto.XmrToException;
-import com.m2049r.xmrwallet.xmrto.api.CreateOrder;
-import com.m2049r.xmrwallet.xmrto.api.XmrToApi;
+import com.litas.ltlwallet.xmrto.api.XmrToCallback;
+import com.litas.ltlwallet.xmrto.XmrToError;
+import com.litas.ltlwallet.xmrto.XmrToException;
+import com.litas.ltlwallet.xmrto.api.CreateOrder;
+import com.litas.ltlwallet.xmrto.api.XmrToApi;
 
 import net.jodah.concurrentunit.Waiter;
 

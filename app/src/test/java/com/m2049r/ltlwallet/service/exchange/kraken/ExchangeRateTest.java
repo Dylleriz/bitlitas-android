@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 m2049r et al.
+ * Copyright (c) 2017 litas et al.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.m2049r.xmrwallet.service.exchange.kraken;
+package com.litas.ltlwallet.service.exchange.kraken;
 
-import com.m2049r.xmrwallet.service.exchange.api.ExchangeApi;
-import com.m2049r.xmrwallet.service.exchange.api.ExchangeCallback;
-import com.m2049r.xmrwallet.service.exchange.api.ExchangeException;
-import com.m2049r.xmrwallet.service.exchange.api.ExchangeRate;
+import com.litas.ltlwallet.service.exchange.api.ExchangeApi;
+import com.litas.ltlwallet.service.exchange.api.ExchangeCallback;
+import com.litas.ltlwallet.service.exchange.api.ExchangeException;
+import com.litas.ltlwallet.service.exchange.api.ExchangeRate;
 
 import net.jodah.concurrentunit.Waiter;
 

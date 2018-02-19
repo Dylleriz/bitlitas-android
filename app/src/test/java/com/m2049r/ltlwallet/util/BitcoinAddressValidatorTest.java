@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 m2049r
+ * Copyright (c) 2017 litas
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.m2049r.xmrwallet.util;
+package com.litas.ltlwallet.util;
 
 import org.junit.Test;
 
