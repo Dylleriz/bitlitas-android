@@ -39,7 +39,7 @@
 
                 <TextView
                     android:id="@+id/tx_amount"
-                    style="@style/MoneroText.PosAmount"
+                    style="@style/BitlitasText.PosAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="end"
@@ -47,7 +47,7 @@
 
                 <TextView
                     android:id="@+id/tx_fee"
-                    style="@style/MoneroText.PosFee"
+                    style="@style/BitlitasText.PosFee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="end"
@@ -57,7 +57,7 @@
 
         <TextView
             android:id="@+id/tx_paymentid"
-            style="@style/MoneroText.PosNote"
+            style="@style/BitlitasText.PosNote"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -69,7 +69,7 @@
 
         <TextView
             android:id="@+id/tx_datetime"
-            style="@style/MoneroText.PosDate"
+            style="@style/BitlitasText.PosDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

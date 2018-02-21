@@ -56,7 +56,7 @@ import com.litas.ltlwallet.data.BarcodeData;
 import com.litas.ltlwallet.model.Wallet;
 import com.litas.ltlwallet.model.WalletManager;
 import com.litas.ltlwallet.util.Helper;
-import com.litas.ltlwallet.util.MoneroThreadPoolExecutor;
+import com.litas.ltlwallet.util.BitlitasThreadPoolExecutor;
 import com.litas.ltlwallet.widget.ExchangeView;
 import com.litas.ltlwallet.widget.Toolbar;
 
@@ -294,7 +294,7 @@ public class ReceiveFragment extends Fragment {
     }
 
     private void loadAndShow(String walletPath, String password) {
-        new AsyncShow().executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR,
+        new AsyncShow().executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR,
                 walletPath, password);
     }
 
@@ -406,7 +406,7 @@ public class ReceiveFragment extends Fragment {
     }
 
     private Bitmap addLogo(Bitmap qrBitmap) {
-        Bitmap logo = getMoneroLogo();
+        Bitmap logo = getBitlitasLogo();
         int qrWidth = qrBitmap.getWidth();
         int qrHeight = qrBitmap.getHeight();
         int logoWidth = logo.getWidth();
@@ -430,9 +430,9 @@ public class ReceiveFragment extends Fragment {
 
     private Bitmap logo = null;
 
-    private Bitmap getMoneroLogo() {
+    private Bitmap getBitlitasLogo() {
         if (logo == null) {
-            logo = Helper.getBitmap(getContext(), R.drawable.ic_monero_logo_b);
+            logo = Helper.getBitmap(getContext(), R.drawable.ic_bitlitas_logo_b);
         }
         return logo;
     }

@@ -254,7 +254,7 @@ public class SendBtcConfirmWizardFragment extends SendWizardFragment implements 
         }
         showStageError(getString(R.string.send_create_tx_error_title),
                 errorText,
-                getString(R.string.text_noretry_monero));
+                getString(R.string.text_noretry_bitlitas));
     }
 
     @Override

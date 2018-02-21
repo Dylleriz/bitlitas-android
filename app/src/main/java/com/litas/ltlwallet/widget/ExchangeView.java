@@ -200,7 +200,7 @@ public class ExchangeView extends LinearLayout
                 parentView.post(new Runnable() {
                     @Override
                     public void run() {
-                        ((TextView) parentView.getChildAt(0)).setTextColor(getResources().getColor(R.color.moneroGray));
+                        ((TextView) parentView.getChildAt(0)).setTextColor(getResources().getColor(R.color.bitlitasGray));
                     }
                 });
                 doExchange();

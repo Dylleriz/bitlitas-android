@@ -14,8 +14,8 @@ android {
         applicationId "com.litas.ltlwallet"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 73
-        versionName "1.0.4 'Satoshio Sapnas'"
+        versionCode 74
+        versionName "1.0.5 'Satoshio Sapnas'"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {

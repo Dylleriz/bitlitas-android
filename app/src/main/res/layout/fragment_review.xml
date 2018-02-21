@@ -26,7 +26,7 @@
             android:weightSum="2">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/BitlitasLabel.Heading"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -34,7 +34,7 @@
                 android:textAlignment="center" />
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/BitlitasLabel.Heading"
                 android:layout_width="0sp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -51,7 +51,7 @@
 
             <TextView
                 android:id="@+id/tvWalletName"
-                style="@style/MoneroText"
+                style="@style/BitlitasText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -59,7 +59,7 @@
 
             <TextView
                 android:id="@+id/tvWalletPassword"
-                style="@style/MoneroText"
+                style="@style/BitlitasText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -73,7 +73,7 @@
             android:layout_marginTop="@dimen/header_top">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/BitlitasLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -92,7 +92,7 @@
 
         <TextView
             android:id="@+id/tvWalletAddress"
-            style="@style/MoneroText.Monospace"
+            style="@style/BitlitasText.Monospace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/data_top"
@@ -104,7 +104,7 @@
             android:layout_marginTop="@dimen/header_top">
 
             <TextView
-                style="@style/MoneroLabel.Heading"
+                style="@style/BitlitasLabel.Heading"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -113,7 +113,7 @@
 
         <TextView
             android:id="@+id/tvWalletMnemonic"
-            style="@style/MoneroText.Monospace.Mnemonic"
+            style="@style/BitlitasText.Monospace.Mnemonic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/data_top"
@@ -122,7 +122,7 @@
 
         <Button
             android:id="@+id/bAccept"
-            style="@style/MoneroButton"
+            style="@style/BitlitasButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/section_top"
@@ -131,7 +131,7 @@
 
         <Button
             android:id="@+id/bAdvancedInfo"
-            style="@style/MoneroFab"
+            style="@style/BitlitasFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -156,7 +156,7 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    style="@style/MoneroLabel.Heading"
+                    style="@style/BitlitasLabel.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -174,7 +174,7 @@
 
             <TextView
                 android:id="@+id/tvWalletViewKey"
-                style="@style/MoneroText.Monospace"
+                style="@style/BitlitasText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"
@@ -186,7 +186,7 @@
                 android:layout_marginTop="@dimen/header_top">
 
                 <TextView
-                    style="@style/MoneroLabel.Heading"
+                    style="@style/BitlitasLabel.Heading"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -195,7 +195,7 @@
 
             <TextView
                 android:id="@+id/tvWalletSpendKey"
-                style="@style/MoneroText.Monospace"
+                style="@style/BitlitasText.Monospace"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/data_top"

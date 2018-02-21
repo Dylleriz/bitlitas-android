@@ -38,7 +38,7 @@ import com.litas.ltlwallet.widget.Toolbar;
 import com.litas.ltlwallet.model.Wallet;
 import com.litas.ltlwallet.model.WalletManager;
 import com.litas.ltlwallet.util.Helper;
-import com.litas.ltlwallet.util.MoneroThreadPoolExecutor;
+import com.litas.ltlwallet.util.BitlitasThreadPoolExecutor;
 
 import timber.log.Timber;
 
@@ -117,7 +117,7 @@ public class GenerateReviewFragment extends Fragment {
         String path = args.getString("path");
         String password = args.getString("password");
         this.type = args.getString("type");
-        new AsyncShow().executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR,
+        new AsyncShow().executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR,
                 path, password);
         return view;
     }

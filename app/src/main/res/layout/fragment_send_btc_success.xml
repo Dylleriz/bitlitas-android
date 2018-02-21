@@ -31,7 +31,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/MoneroText.Success"
+                    style="@style/BitlitasText.Success"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -39,7 +39,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/MoneroText.Balance.Orange"
+                    style="@style/BitlitasText.Balance.Orange"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -48,7 +48,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/MoneroText.Gray.SuccessFee"
+                    style="@style/BitlitasText.Gray.SuccessFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -65,7 +65,7 @@
             android:orientation="horizontal">
 
             <TextView
-                style="@style/MoneroText.Confirm.Label"
+                style="@style/BitlitasText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_txid"
@@ -83,7 +83,7 @@
 
         <TextView
             android:id="@+id/tvTxId"
-            style="@style/MoneroText"
+            style="@style/BitlitasText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -91,7 +91,7 @@
             tools:text="fcb12cbe9f43d4e8b9ee54f48d450a89a6937946db856506820df0539571801d" />
 
         <TextView
-            style="@style/MoneroText.Confirm.Label"
+            style="@style/BitlitasText.Confirm.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -100,7 +100,7 @@
 
         <TextView
             android:id="@+id/tvTxAddress"
-            style="@style/MoneroText"
+            style="@style/BitlitasText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -115,14 +115,14 @@
 
             <TextView
                 android:id="@+id/labelPaymentId"
-                style="@style/MoneroText.Confirm.Label"
+                style="@style/BitlitasText.Confirm.Label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/label_send_payment_id" />
 
             <TextView
                 android:id="@+id/tvTxPaymentId"
-                style="@style/MoneroText.Confirm"
+                style="@style/BitlitasText.Confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -162,7 +162,7 @@
                             android:layout_gravity="center"
                             android:backgroundTintMode="src_in"
                             android:indeterminate="true"
-                            android:indeterminateTint="@color/moneroFab" />
+                            android:indeterminateTint="@color/bitlitasFab" />
 
                         <ImageView
                             android:id="@+id/ivXmrToStatus"
@@ -191,7 +191,7 @@
 
                     <TextView
                         android:id="@+id/tvXmrToStatus"
-                        style="@style/MoneroText"
+                        style="@style/BitlitasText"
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/flXmrtoProgress"
@@ -210,7 +210,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        style="@style/MoneroText"
+                        style="@style/BitlitasText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/info_send_xmrto_success_order_label"
@@ -219,7 +219,7 @@
 
                     <TextView
                         android:id="@+id/tvXmrToAmount"
-                        style="@style/MoneroText.Balance.Orange"
+                        style="@style/BitlitasText.Balance.Orange"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
@@ -228,7 +228,7 @@
 
                     <TextView
                         android:id="@+id/tvTxXmrToKey"
-                        style="@style/MoneroText"
+                        style="@style/BitlitasText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/dotGray"
@@ -242,7 +242,7 @@
                         tools:text="XMR.TO-d2KQ" />
 
                     <TextView
-                        style="@style/MoneroText"
+                        style="@style/BitlitasText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"

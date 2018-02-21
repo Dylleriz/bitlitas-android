@@ -27,7 +27,7 @@
 
                 <TextView
                     android:id="@+id/tvTxAmount"
-                    style="@style/MoneroText.PosAmount"
+                    style="@style/BitlitasText.PosAmount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -36,7 +36,7 @@
 
                 <TextView
                     android:id="@+id/tvTxFee"
-                    style="@style/MoneroText.PosFee"
+                    style="@style/BitlitasText.PosFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:selectAllOnFocus="true"
@@ -46,7 +46,7 @@
 
             <TextView
                 android:id="@+id/tvTxTimestamp"
-                style="@style/MoneroText.PosDate"
+                style="@style/BitlitasText.PosDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -75,7 +75,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/MoneroText.Medium"
+                    style="@style/BitlitasText.Medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -92,7 +92,7 @@
                     <TableRow>
 
                         <TextView
-                            style="@style/MoneroLabel.Small"
+                            style="@style/BitlitasLabel.Small"
                             android:layout_gravity="center_vertical"
                             android:gravity="end"
                             android:padding="8dp"
@@ -100,7 +100,7 @@
 
                         <TextView
                             android:id="@+id/tvTxAmountBtc"
-                            style="@style/MoneroText"
+                            style="@style/BitlitasText"
                             android:gravity="start"
                             android:padding="8dp"
                             android:selectAllOnFocus="true"
@@ -113,7 +113,7 @@
 
                         <TextView
                             android:id="@+id/labelDestinationBtc"
-                            style="@style/MoneroLabel.Small"
+                            style="@style/BitlitasLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="end"
@@ -122,7 +122,7 @@
 
                         <TextView
                             android:id="@+id/tvDestinationBtc"
-                            style="@style/MoneroText"
+                            style="@style/BitlitasText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="start"
@@ -136,7 +136,7 @@
 
                         <TextView
                             android:id="@+id/labelTxXmrToKey"
-                            style="@style/MoneroLabel.Small"
+                            style="@style/BitlitasLabel.Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -148,7 +148,7 @@
 
                             <TextView
                                 android:id="@+id/tvTxXmrToKey"
-                                style="@style/MoneroText"
+                                style="@style/BitlitasText"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@color/dotGray"
@@ -176,7 +176,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8sp"
@@ -188,18 +188,18 @@
 
                     <EditText
                         android:id="@+id/etTxNotes"
-                        style="@style/MoneroEdit"
+                        style="@style/BitlitasEdit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
                         android:layout_toStartOf="@+id/bTxNotes"
-                        android:backgroundTint="@color/moneroGray"
+                        android:backgroundTint="@color/bitlitasGray"
                         android:hint="@string/tx_notes_hint"
                         android:inputType="textMultiLine" />
 
                     <Button
                         android:id="@+id/bTxNotes"
-                        style="@style/MoneroButton.Small"
+                        style="@style/BitlitasButton.Small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -215,7 +215,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -223,7 +223,7 @@
 
                 <TextView
                     android:id="@+id/tvDestination"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -233,7 +233,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -241,7 +241,7 @@
 
                 <TextView
                     android:id="@+id/tvTxPaymentId"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -251,7 +251,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -259,7 +259,7 @@
 
                 <TextView
                     android:id="@+id/tvTxId"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -269,7 +269,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -277,7 +277,7 @@
 
                 <TextView
                     android:id="@+id/tvTxKey"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -287,7 +287,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -295,7 +295,7 @@
 
                 <TextView
                     android:id="@+id/tvTxBlockheight"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"
@@ -305,7 +305,7 @@
             <TableRow>
 
                 <TextView
-                    style="@style/MoneroLabel.Small"
+                    style="@style/BitlitasLabel.Small"
                     android:layout_gravity="center_vertical"
                     android:gravity="end"
                     android:padding="8dp"
@@ -313,7 +313,7 @@
 
                 <TextView
                     android:id="@+id/tvTxTransfers"
-                    style="@style/MoneroText"
+                    style="@style/BitlitasText"
                     android:gravity="start"
                     android:padding="8dp"
                     android:selectAllOnFocus="true"

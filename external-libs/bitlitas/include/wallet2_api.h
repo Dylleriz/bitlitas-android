@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The Bitlitas Project
 //
 // All rights reserved.
 //
@@ -37,7 +37,7 @@
 #include <iostream>
 
 //  Public interface for libwallet library
-namespace Monero {
+namespace Bitlitas {
 
     namespace Utils {
         bool isAddressLocal(const std::string &hostaddr);
@@ -732,7 +732,7 @@ struct WalletManager
      * \param txid - the transaction id for that payment
      * \param txkey - the transaction's secret key
      * \param daemon_address - the address (host and port) to the daemon to request transaction data
-     * \param received - if succesful, will hold the amount of monero received
+     * \param received - if succesful, will hold the amount of bitlitas received
      * \param height - if succesful, will hold the height of the transaction (0 if only in the pool)
      * \param error - if unsuccesful, will hold an error string with more information about the error
      * \return - true is succesful, false otherwise
@@ -772,7 +772,7 @@ struct WalletManager
     //! stops mining
     virtual bool stopMining() = 0;
 
-    //! resolves an OpenAlias address to a monero address
+    //! resolves an OpenAlias address to a bitlitas address
     virtual std::string resolveOpenAlias(const std::string &address, bool &dnssec_valid) const = 0;
 
     //! checks for an update and returns version, hash and url
@@ -802,5 +802,5 @@ struct WalletManagerFactory
 
 }
 
-namespace Bitmonero = Monero;
+namespace Bitbitlitas = Bitlitas;
 

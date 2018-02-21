@@ -16,7 +16,7 @@
 
 package com.litas.ltlwallet.util;
 
-import com.litas.ltlwallet.service.MoneroHandlerThread;
+import com.litas.ltlwallet.service.BitlitasHandlerThread;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Executor;
@@ -27,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
 
-public class MoneroThreadPoolExecutor {
+public class BitlitasThreadPoolExecutor {
     private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
     private static final int CORE_POOL_SIZE = Math.max(2, Math.min(CPU_COUNT - 1, 4));
     private static final int MAXIMUM_POOL_SIZE = CPU_COUNT * 2 + 1;
@@ -37,20 +37,20 @@ public class MoneroThreadPoolExecutor {
         private final AtomicInteger mCount = new AtomicInteger(1);
 
         public Thread newThread(Runnable r) {
-            return new Thread(null, r, "MoneroTask #" + mCount.getAndIncrement(), MoneroHandlerThread.THREAD_STACK_SIZE);
+            return new Thread(null, r, "BitlitasTask #" + mCount.getAndIncrement(), BitlitasHandlerThread.THREAD_STACK_SIZE);
         }
     };
 
     private static final BlockingQueue<Runnable> sPoolWorkQueue =
             new LinkedBlockingQueue<>(128);
 
-    public static final Executor MONERO_THREAD_POOL_EXECUTOR;
+    public static final Executor BITLITAS_THREAD_POOL_EXECUTOR;
 
     static {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
                 CORE_POOL_SIZE, MAXIMUM_POOL_SIZE, KEEP_ALIVE_SECONDS, TimeUnit.SECONDS,
                 sPoolWorkQueue, sThreadFactory);
         threadPoolExecutor.allowCoreThreadTimeOut(true);
-        MONERO_THREAD_POOL_EXECUTOR = threadPoolExecutor;
+        BITLITAS_THREAD_POOL_EXECUTOR = threadPoolExecutor;
     }
 }

@@ -52,7 +52,7 @@ import com.litas.ltlwallet.model.Wallet;
 import com.litas.ltlwallet.model.WalletManager;
 import com.litas.ltlwallet.service.WalletService;
 import com.litas.ltlwallet.util.Helper;
-import com.litas.ltlwallet.util.MoneroThreadPoolExecutor;
+import com.litas.ltlwallet.util.BitlitasThreadPoolExecutor;
 import com.litas.ltlwallet.widget.Toolbar;
 
 import java.io.File;
@@ -839,7 +839,7 @@ public class LoginActivity extends SecureActivity
     public void createWallet(final String name, final String password,
                              final WalletCreator walletCreator) {
         new AsyncCreateWallet(name, password, walletCreator)
-                .executeOnExecutor(MoneroThreadPoolExecutor.MONERO_THREAD_POOL_EXECUTOR);
+                .executeOnExecutor(BitlitasThreadPoolExecutor.BITLITAS_THREAD_POOL_EXECUTOR);
     }
 
     void walletGenerateError() {
