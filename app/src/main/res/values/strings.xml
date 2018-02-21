@@ -252,8 +252,8 @@
     <string name="send_send_timed_label">Išleisti mano BitLitus (%1$s)</string>
     <string name="send_really_send_hint">Paskutinis žingsnis - Patvirtinimas!</string>
     <string name="send_qr_invalid">Ne QR kodas</string>
-    <string name="send_qr_address_invalid">Not a valid payment QR code</string>
-    <string name="send_address_invalid">Not a valid address</string>
+    <string name="send_qr_address_invalid">Neteisingas QR mokėjimo kodas</string>
+    <string name="send_address_invalid">Neteisingas adresas</string>
     <string name="send_preparing_progress">Paruošiama transakcija</string>
     <string name="send_title">Siųsti</string>
     <string name="send_available">Balansas: %1$s LTL</string>
