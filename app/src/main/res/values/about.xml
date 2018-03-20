@@ -11,20 +11,20 @@
         <p>Your password acts as your decryption key to both lock and unlock your wallet — your wallet cannot be accessed without it. </p>
         <h2>App permissions</h2>
         <ul>
-        <li>INTERNET : Prisijungti prie jungčių</li>
-        <li>READ_EXTERNAL_STORAGE : Įrašyti į piniginės failą</li>
-        <li>WRITE_EXTERNAL_STORAGE : Skaityti iš piniginės failo</li>
-        <li>WAKE_LOCK : Išlaikyti telefoną aktyvų, kol vyksta sinchronizavimas</li>
-        <li>CAMERA : Skenuoti QR kodą</li>
+        <li>INTERNET : Connect to node</li>
+        <li>READ_EXTERNAL_STORAGE : Save to wallet file</li>
+        <li>WRITE_EXTERNAL_STORAGE : Read from wallet file</li>
+        <li>WAKE_LOCK : Keep your phone active while syncing</li>
+        <li>CAMERA : Scan QR code</li>
         </ul>
-        <h2>Susisiekite</h2>
-        <p>Discord chat kanalas: http://bit.ly/bitlitas
+        <h2>Support</h2>
+        <p>Discord Chat Channel: http://bit.ly/bitlitas
         </p>
         ]]></string>
 
     <string name="about_licenses" translatable="false"><![CDATA[
-        <h1>Atviro kodo projektas</h1>
-        <h3>bitlitas (https://bitlitas.lt)</h3>
+        <h1>Open source project</h1>
+        <h3>BitLitas (https://bitlitas.tech)</h3>
         Copyright (c) 2018.
 
         ]]></string>
