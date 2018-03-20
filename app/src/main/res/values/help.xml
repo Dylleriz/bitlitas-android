@@ -18,12 +18,11 @@
     ]]></string>
 
     <string name="help_create_keys"><![CDATA[
-        <h1>Atkurti pagal raktus</h1>
-        <p>Jeigu norite atkurti piniginę pagal raktus!</p>
-        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
-        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.<p>
-        <p>Įveskite vieša adresą, stebėjimo raktą ir išleidimo raktą</p>
-        <p>Jeigu žinote kokiame aukštyje buvo sukurta piniginė - įveskite. Priešingu atveju palikite tuščia. Bus skenuojama visa grandinė, tai gali užtrukti.</p>
+        <h1>Create Wallet - Keys</h1>
+        <p>If you are recovering your wallet using your keys!</p>
+        <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the device.<p>
+        <p>Enter your BitLitas Wallet in the field \"Public Address\" and fill out \"View Key\" and  \"Spend Key\".</p>
+        <p>If you know the block number of the first transaction used for this address, enter it in the field \"Restore Height\" - leaving it blank will scan the <em>entire</em> blockchain for transactions belonging to your address. This takes a <em>long</em> time.</p>
     ]]></string>
 
     <string name="help_create_view"><![CDATA[
