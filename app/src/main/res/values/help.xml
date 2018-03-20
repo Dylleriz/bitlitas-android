@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="help_create_new"><![CDATA[
-        <h1>Sukurti naują piniginę</h1>
-        <p>Jeigu tau reikia naujo Bitlitas adreso!</p>
-        <p>Įveskite unikalų piniginės pavadinimą ir slaptažodį.
-        Slaptažodis skirtas apsaugoti piniginės failą. Naudokite stiprų ir ilgą slaptažodį.</p>
-        <h2>Būtinai užsirašykite žodžių paslaptį!</h3>
-        <p>Šie žodžiai yra pagrindinis įrankis susigrąžinti pamestą piniginę ir ją gauti priėjimą prie santaupų.
-        Labai svarbu šiuos žodžius saugoti slaptai</p>
-        <p>Praradus piniginės raktus bei paslaptį, nėra jokios galimybės atgauti savo santaupų!
-        Paslaptis nėra keičiama, todėl nutekinus nebegalėsite pasikeisti. Geriausia paslaptį užsirašyti atskirai ir laikyti saugiose vietoje.</p>
+        <h1>Create Wallet - New</h1>
+        <p>If you need a new Bitlitas Wallet!</p>
+        <p>Enter a unique wallet name and password. The password is used for securing your wallet data on the device. Use a strong password - even better use a passphrase.</p>
+        <h2>Note your Mnemonic Seed!</h3>
+        <p>On the following screen you will find your 25-word \"Mnemonic Seed\". This is the only data needed to recover your wallet at a later point and gain full access to your funds. Keeping this secure and private is very important, as it gives <em>anyone</em> full access to your funds!</p>
+        <p>If you lose your wallet password, you can still recover your wallet with the Mnemonic Seed. There is no way to recover your Mnemonic Seed, if you lose it all your funds will be lost!</p>
     ]]></string>
 
     <string name="help_create_seed"><![CDATA[
